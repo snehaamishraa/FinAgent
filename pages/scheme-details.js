@@ -19,7 +19,7 @@ export default function SchemeDetails() {
 
   const fetchSchemeDetails = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/api/schemes/${bankId}`);
+      const response = await fetch(`/api/schemes/${bankId}`);
       if (!response.ok) throw new Error('Failed to fetch scheme');
       const data = await response.json();
       const foundScheme = data.schemes.find(s => s.id === schemeId);

@@ -16,7 +16,7 @@ export default function SelectBank() {
 
   const fetchBanks = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/banks');
+      const response = await fetch('/api/banks');
       const data = await response.json();
       setBanks(data.banks);
       setLoading(false);

@@ -19,7 +19,7 @@ export default function Results() {
 
   const filterSchemes = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/filter-schemes', {
+      const response = await fetch('/api/filter-schemes', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
