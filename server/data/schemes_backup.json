@@ -1,0 +1,445 @@
+{
+  "Bank_A": [
+    {
+      "id": "ba1",
+      "name": "Youth Savings Plus",
+      "description": "A high-interest savings account designed for young individuals to build their financial future with attractive benefits.",
+      "interestRate": "5.5%",
+      "targetGroup": "Age 18-30, All Categories",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 30,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Education"],
+      "benefits": [
+        "No minimum balance requirement",
+        "Free debit card",
+        "Online banking access",
+        "Mobile app with budgeting tools"
+      ]
+    },
+    {
+      "id": "ba2",
+      "name": "Women Empowerment Account",
+      "description": "Specially designed account for women with exclusive benefits and preferential interest rates to promote financial independence.",
+      "interestRate": "6.0%",
+      "targetGroup": "Women, Age 18+, All Categories",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Female",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Business", "Education"],
+      "benefits": [
+        "Higher interest rates",
+        "Free financial literacy workshops",
+        "Personal loan facility",
+        "Insurance coverage included"
+      ]
+    },
+    {
+      "id": "ba3",
+      "name": "Senior Citizen Welfare Scheme",
+      "description": "Comprehensive banking solution for senior citizens with priority services and enhanced returns on savings.",
+      "interestRate": "7.5%",
+      "targetGroup": "Age 60+, All Categories",
+      "eligibility": {
+        "minAge": 60,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Retirement", "Healthcare"],
+      "benefits": [
+        "Highest interest rates",
+        "Priority banking services",
+        "Free health checkup annually",
+        "Doorstep banking facility"
+      ]
+    },
+    {
+      "id": "ba4",
+      "name": "Student Scholar Account",
+      "description": "Zero-balance account for students with educational loans access and scholarship tracking.",
+      "interestRate": "4.5%",
+      "targetGroup": "Students Age 16-25",
+      "eligibility": {
+        "minAge": 16,
+        "maxAge": 25,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": 30000,
+        "minIncome": null,
+        "occupations": ["Student"]
+      },
+      "suitableFor": ["Education", "Savings"],
+      "benefits": [
+        "Zero balance requirement",
+        "Education loan pre-approval",
+        "Scholarship alerts",
+        "Free international debit card"
+      ]
+    },
+    {
+      "id": "ba5",
+      "name": "SC/ST/OBC Development Scheme",
+      "description": "Special initiative to support financial inclusion with subsidized loan rates and no processing fees.",
+      "interestRate": "5.0%",
+      "targetGroup": "SC/ST/OBC, Age 18+",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["SC", "ST", "OBC"],
+        "maxIncome": 50000,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Business", "Education", "Home"],
+      "benefits": [
+        "Subsidized loan interest rates",
+        "No account maintenance charges",
+        "Business loan up to 5 lakhs",
+        "Government scheme linkage"
+      ]
+    },
+    {
+      "id": "ba6",
+      "name": "Entrepreneur Kickstart",
+      "description": "Tailored for new entrepreneurs with business credit lines and financial advisory services.",
+      "interestRate": "5.5%",
+      "targetGroup": "Business Owners, Age 21-50",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 50,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": 25000,
+        "occupations": ["Self-Employed", "Business Owner"]
+      },
+      "suitableFor": ["Business", "Investment"],
+      "benefits": [
+        "Business credit line up to 10 lakhs",
+        "Free business advisory",
+        "Merchant services integration",
+        "Tax filing assistance"
+      ]
+    }
+  ],
+  "Bank_B": [
+    {
+      "id": "bb1",
+      "name": "Future Builder Fixed Deposit",
+      "description": "Long-term fixed deposit with attractive returns ideal for building wealth over time.",
+      "interestRate": "7.0%",
+      "targetGroup": "All Categories, Age 18+",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Investment", "Retirement"],
+      "benefits": [
+        "Flexible tenure options",
+        "Loan against FD facility",
+        "Auto-renewal option",
+        "Premature withdrawal allowed"
+      ]
+    },
+    {
+      "id": "bb2",
+      "name": "Minority Community Support",
+      "description": "Financial inclusion program supporting minority communities with accessible banking and low-interest loans.",
+      "interestRate": "5.5%",
+      "targetGroup": "Minority, Age 18+",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["Minority"],
+        "maxIncome": 60000,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Business", "Education", "Home"],
+      "benefits": [
+        "Low-interest personal loans",
+        "Business startup support",
+        "Educational loan subsidies",
+        "Community development programs"
+      ]
+    },
+    {
+      "id": "bb3",
+      "name": "Farmer Prosperity Account",
+      "description": "Specialized account for farmers with crop insurance and agricultural loan facilities.",
+      "interestRate": "6.0%",
+      "targetGroup": "Farmers, Age 18+",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": 100000,
+        "minIncome": null,
+        "occupations": ["Farmer", "Agricultural Worker"]
+      },
+      "suitableFor": ["Agriculture", "Business"],
+      "benefits": [
+        "Crop insurance included",
+        "Agricultural equipment loans",
+        "Weather-based advisory",
+        "Government subsidy linkage"
+      ]
+    },
+    {
+      "id": "bb4",
+      "name": "Salaried Professional Plus",
+      "description": "Comprehensive banking package for salaried professionals with salary account benefits.",
+      "interestRate": "5.0%",
+      "targetGroup": "Salaried, Age 21-60",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 60,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": 30000,
+        "occupations": ["Salaried"]
+      },
+      "suitableFor": ["Savings", "Home", "Investment"],
+      "benefits": [
+        "Free salary account services",
+        "Pre-approved personal loans",
+        "Credit card with rewards",
+        "Home loan special rates"
+      ]
+    },
+    {
+      "id": "bb5",
+      "name": "First Time Home Buyer",
+      "description": "Special home loan scheme for first-time buyers with lower down payment requirements.",
+      "interestRate": "7.5%",
+      "targetGroup": "First-time Buyers, Age 25-45",
+      "eligibility": {
+        "minAge": 25,
+        "maxAge": 45,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": 150000,
+        "minIncome": 35000,
+        "occupations": ["Salaried", "Self-Employed"]
+      },
+      "suitableFor": ["Home"],
+      "benefits": [
+        "Lower down payment - 10%",
+        "Government subsidy eligible",
+        "Flexible repayment terms",
+        "Free property valuation"
+      ]
+    },
+    {
+      "id": "bb6",
+      "name": "Retired Life Pension Account",
+      "description": "Pension management account with regular income distribution and health benefits.",
+      "interestRate": "7.0%",
+      "targetGroup": "Retirees, Age 55+",
+      "eligibility": {
+        "minAge": 55,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Retired"]
+      },
+      "suitableFor": ["Retirement", "Healthcare", "Savings"],
+      "benefits": [
+        "Monthly pension distribution",
+        "Health insurance coverage",
+        "Tax-saving benefits",
+        "Nominee facility"
+      ]
+    }
+  ],
+  "Bank_C": [
+    {
+      "id": "bc1",
+      "name": "Teen Money Manager",
+      "description": "Introduction to banking for teenagers with parental controls and financial education.",
+      "interestRate": "4.0%",
+      "targetGroup": "Teenagers Age 13-19",
+      "eligibility": {
+        "minAge": 13,
+        "maxAge": 19,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Student"]
+      },
+      "suitableFor": ["Savings", "Education"],
+      "benefits": [
+        "Parental monitoring dashboard",
+        "Financial literacy modules",
+        "Spending alerts and limits",
+        "Savings goal tracker"
+      ]
+    },
+    {
+      "id": "bc2",
+      "name": "Healthcare Savings Plus",
+      "description": "Specialized savings account with health insurance and medical emergency fund.",
+      "interestRate": "6.5%",
+      "targetGroup": "All, Age 25+",
+      "eligibility": {
+        "minAge": 25,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": 20000,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Healthcare", "Savings"],
+      "benefits": [
+        "Health insurance up to 5 lakhs",
+        "Medical emergency fund access",
+        "Cashless hospitalization",
+        "Annual health checkup"
+      ]
+    },
+    {
+      "id": "bc3",
+      "name": "Green Investment Fund",
+      "description": "Eco-friendly investment account supporting sustainable projects with competitive returns.",
+      "interestRate": "6.0%",
+      "targetGroup": "All, Age 18+",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Investment", "Environment"],
+      "benefits": [
+        "Investment in green projects",
+        "Carbon offset tracking",
+        "Tax benefits under Section 80C",
+        "Quarterly sustainability reports"
+      ]
+    },
+    {
+      "id": "bc4",
+      "name": "Single Parent Support Scheme",
+      "description": "Comprehensive support for single parents with childcare benefits and flexible banking.",
+      "interestRate": "6.5%",
+      "targetGroup": "Single Parents, Age 21-55",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 55,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": 75000,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Education", "Healthcare", "Savings"],
+      "benefits": [
+        "Child education savings",
+        "Medical insurance for family",
+        "Emergency loan facility",
+        "Financial counseling"
+      ]
+    },
+    {
+      "id": "bc5",
+      "name": "Freelancer Freedom Account",
+      "description": "Designed for freelancers and gig workers with flexible banking and payment solutions.",
+      "interestRate": "5.5%",
+      "targetGroup": "Freelancers, Age 18+",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": 15000,
+        "occupations": ["Freelancer", "Self-Employed"]
+      },
+      "suitableFor": ["Business", "Savings"],
+      "benefits": [
+        "Multiple currency support",
+        "Invoice management tools",
+        "Payment gateway integration",
+        "Tax filing assistance"
+      ]
+    },
+    {
+      "id": "bc6",
+      "name": "Dream Wedding Savings",
+      "description": "Goal-based savings account to help plan and save for wedding expenses.",
+      "interestRate": "6.0%",
+      "targetGroup": "Age 21-40",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 40,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Wedding", "Savings"],
+      "benefits": [
+        "Goal-based saving tracker",
+        "Wedding vendor discounts",
+        "Flexible withdrawal options",
+        "Holiday planning assistance"
+      ]
+    },
+    {
+      "id": "bc7",
+      "name": "Veteran Honor Account",
+      "description": "Special account for military veterans with exclusive benefits and priority services.",
+      "interestRate": "7.0%",
+      "targetGroup": "Veterans, Age 21+",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Retired", "Veteran"]
+      },
+      "suitableFor": ["Retirement", "Healthcare", "Home"],
+      "benefits": [
+        "Preferential loan rates",
+        "Health insurance coverage",
+        "Priority customer service",
+        "No service charges"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+:root {
+  --neon-cyan: #00f3ff;
+  --neon-purple: #b400ff;
+  --neon-pink: #ff006e;
+  --neon-green: #39ff14;
+  --dark-bg: #0a0a0f;
+  --card-bg: #1a1a2e;
+  --card-hover: #252541;
+  --text-primary: #ffffff;
+  --text-secondary: #b4b4c8;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--dark-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0f 0%, #1a0a2e 100%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Neon glow effect utility */
+.neon-glow {
+  box-shadow: 0 0 10px var(--neon-cyan),
+              0 0 20px var(--neon-cyan),
+              0 0 30px var(--neon-cyan);
+}
+
+.neon-glow-purple {
+  box-shadow: 0 0 10px var(--neon-purple),
+              0 0 20px var(--neon-purple),
+              0 0 30px var(--neon-purple);
+}
+
+.neon-glow-pink {
+  box-shadow: 0 0 10px var(--neon-pink),
+              0 0 20px var(--neon-pink),
+              0 0 30px var(--neon-pink);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neon-cyan);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-purple);
+}

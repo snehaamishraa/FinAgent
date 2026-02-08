@@ -1,0 +1,998 @@
+{
+  "SBI": [
+    {
+      "id": "sbi1",
+      "name": "SBI WECARE Senior Citizen Savings Account",
+      "description": "Special savings account for senior citizens aged 60+ with enhanced interest rates and priority banking services.",
+      "interestRate": "7.50% p.a.",
+      "targetGroup": "Senior Citizens (60+ years)",
+      "eligibility": {
+        "minAge": 60,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Retirement"],
+      "benefits": [
+        "Higher interest rates",
+        "Free doorstep banking facility",
+        "Priority service in branches",
+        "Free health checkup annually",
+        "No minimum balance for ages 75+"
+      ],
+      "applicationProcess": [
+        "Visit nearest SBI branch with required documents",
+        "Fill the savings account opening form",
+        "Submit age proof documents (60+ years)",
+        "Complete KYC verification process",
+        "Make initial deposit (minimum ₹1000)",
+        "Receive account number and passbook within 24 hours"
+      ],
+      "documentsRequired": [
+        "Age Proof: Aadhaar Card / PAN Card / Birth Certificate / Passport",
+        "Address Proof: Aadhaar Card / Voter ID / Utility Bill (not older than 3 months)",
+        "Identity Proof: PAN Card / Aadhaar Card / Passport",
+        "Recent passport-size photographs (2 copies)",
+        "Senior Citizen Certificate (if available)"
+      ],
+      "howToApply": "Visit your nearest SBI branch or apply online through SBI's Online Account Opening portal at https://sbi.bank.in/. For doorstep banking, call customer care to schedule a home visit.",
+      "bankContact": {
+        "customerCare": "1800 11 2211 (Toll-Free) / 1800 425 3800",
+        "email": "customercare@sbi.co.in",
+        "website": "https://sbi.bank.in/",
+        "smsService": "SMS 'CARE' to 9223440000"
+      },
+      "source": "https://sbi.bank.in/"
+    },
+    {
+      "id": "sbi2",
+      "name": "SBI Mahila Samman Savings Account",
+      "description": "Dedicated savings account for women with special benefits and preferential interest rates.",
+      "interestRate": "6.00% p.a.",
+      "targetGroup": "Women (18+ years)",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Female",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Business", "Investment"],
+      "benefits": [
+        "Preferential interest rates",
+        "Processing fee waiver on personal loans",
+        "Free DEMAT account",
+        "Insurance benefits",
+        "Financial literacy programs"
+      ],
+      "applicationProcess": [
+        "Visit nearest SBI branch with documents",
+        "Fill Mahila Samman Account opening form",
+        "Complete KYC verification",
+        "Provide nominee details",
+        "Make initial deposit (minimum ₹500)",
+        "Account activated immediately upon verification"
+      ],
+      "documentsRequired": [
+        "Identity Proof: Aadhaar Card / PAN Card / Passport / Voter ID",
+        "Address Proof: Aadhaar Card / Utility Bill / Rent Agreement",
+        "PAN Card (mandatory for interest above ₹10,000)",
+        "Recent passport-size photographs (3 copies)",
+        "Income proof (if availing loan benefits)"
+      ],
+      "howToApply": "Visit SBI branch or apply online at https://sbi.bank.in/. Use SBI YONO app for instant account opening. Women entrepreneurs can contact SBI's dedicated helpline for business loan guidance.",
+      "bankContact": {
+        "customerCare": "1800 11 2211 (Toll-Free) / 1800 425 3800",
+        "email": "customercare@sbi.co.in",
+        "website": "https://sbi.bank.in/",
+        "smsService": "SMS 'CARE' to 9223440000"
+      },
+      "source": "https://sbi.bank.in/"
+    },
+    {
+      "id": "sbi3",
+      "name": "SBI Student Plus Account",
+      "description": "Zero balance account for students with digital banking benefits and scholarship tracking.",
+      "interestRate": "4.00% p.a.",
+      "targetGroup": "Students (10-25 years)",
+      "eligibility": {
+        "minAge": 10,
+        "maxAge": 25,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": 50000,
+        "minIncome": null,
+        "occupations": ["Student"]
+      },
+      "suitableFor": ["Education", "Savings"],
+      "benefits": [
+        "Zero balance account",
+        "Free international debit card",
+        "Waiver on education loan processing fee",
+        "Scholarship alerts",
+        "Free mobile banking"
+      ],
+      "applicationProcess": [
+        "Visit SBI branch with parent/guardian (if minor)",
+        "Submit student ID card and school/college bonafide certificate",
+        "Fill account opening form",
+        "Complete KYC with parent's documents (for minors)",
+        "No initial deposit required (zero balance account)",
+        "Receive debit card and net banking credentials within 7 days"
+      ],
+      "documentsRequired": [
+        "Student ID Card / Bonafide Certificate from School/College",
+        "Age Proof: Birth Certificate / Aadhaar / School Certificate",
+        "Address Proof: Aadhaar Card / Parent's address proof",
+        "Parent/Guardian ID proof (for applicants below 18)",
+        "Recent passport-size photographs (2 copies)"
+      ],
+      "howToApply": "Visit nearest SBI branch with a parent/guardian if you're under 18. Students can also apply through YONO app. No minimum balance required. Account converts to regular savings after age 25.",
+      "bankContact": {
+        "customerCare": "1800 11 2211 (Toll-Free) / 1800 425 3800",
+        "email": "customercare@sbi.co.in",
+        "website": "https://sbi.bank.in/",
+        "smsService": "SMS 'CARE' to 9223440000"
+      },
+      "source": "https://sbi.bank.in/"
+    },
+    {
+      "id": "sbi4",
+      "name": "PMJDY - Jan Dhan Account (SBI)",
+      "description": "Basic savings bank deposit account with no minimum balance requirement under PM Jan Dhan Yojana.",
+      "interestRate": "3.00% p.a.",
+      "targetGroup": "All Citizens, Priority for SC/ST/OBC",
+      "eligibility": {
+        "minAge": 10,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Government Schemes"],
+      "benefits": [
+        "No minimum balance",
+        "RuPay debit card with insurance",
+        "Accident insurance up to ₹2 lakh",
+        "Overdraft facility available",
+        "Direct benefit transfer from govt"
+      ],
+      "applicationProcess": [
+        "Visit any SBI branch (no account needed elsewhere)",
+        "Fill simple PMJDY account form in Hindi/English/local language",
+        "Submit only Aadhaar card (no other documents if Aadhaar available)",
+        "If no Aadhaar, submit any identity proof",
+        "Zero balance - no initial deposit needed",
+        "Get RuPay card immediately"
+      ],
+      "documentsRequired": [
+        "Aadhaar Card (preferred - only this needed if available)",
+        "OR any Identity Proof: Voter ID / Driving License / PAN / NREGA Card",
+        "Recent passport-size photograph (1 copy)",
+        "No address proof needed separately if Aadhaar is provided"
+      ],
+      "howToApply": "Visit nearest SBI branch or Kiosk Banking Point. No need for documents if you have Aadhaar. Account opened in 15 minutes. RuPay card with ₹2 lakh accident insurance given immediately. Overdraft facility of ₹10,000 available after 6 months of satisfactory operation.",
+      "bankContact": {
+        "customerCare": "1800 11 2211 (Toll-Free) / 1800 425 3800",
+        "pmjdyHelpline": "1800 11 0001 (PMJDY Dedicated)",
+        "email": "customercare@sbi.co.in",
+        "website": "https://sbi.bank.in/ | https://pmjdy.gov.in/",
+        "smsService": "SMS 'PMJDY' to 9223440000"
+      },
+      "source": "https://sbi.bank.in/"
+    },
+    {
+      "id": "sbi5",
+      "name": "SBI Salary Package Account",
+      "description": "Comprehensive salary account for salaried individuals with preferential rates and benefits.",
+      "interestRate": "4.00% p.a.",
+      "targetGroup": "Salaried Employees",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 60,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": 15000,
+        "occupations": ["Salaried"]
+      },
+      "suitableFor": ["Savings", "Investment"],
+      "benefits": [
+        "Zero minimum balance",
+        "Free personal accident insurance",
+        "Pre-approved personal loan",
+        "Free VISA/Master debit card",
+        "Higher interest on FD"
+      ],
+      "applicationProcess": [
+        "Your employer must have tie-up with SBI for salary accounts",
+        "Submit account opening form to your HR department",
+        "HR forwards your details to SBI along with salary certificate",
+        "Visit branch once for KYC verification or complete through video KYC",
+        "Account activated within 24 hours of verification",
+        "Salary credited from first month"
+      ],
+      "documentsRequired": [
+        "Employer's Letter / Salary Certificate",
+        "Identity Proof: Aadhaar / PAN / Passport",
+        "Address Proof: Aadhaar / Utility Bill / Rent Agreement",
+        "PAN Card (mandatory)",
+        "Recent passport-size photographs (2 copies)",
+        "Company ID card"
+      ],
+      "howToApply": "Check with your HR if company has SBI salary account tie-up. If yes, fill form provided by HR. If no tie-up, request HR to contact SBI corporate banking. Individuals can convert existing SBI account to salary account by submitting salary certificate. No charges while salary is credited.",
+      "bankContact": {
+        "customerCare": "1800 11 2211 (Toll-Free) / 1800 425 3800",
+        "corporateBanking": "1800 267 0000",
+        "email": "customercare@sbi.co.in",
+        "website": "https://sbi.bank.in/",
+        "smsService": "SMS 'SALARY' to 9223440000"
+      },
+      "source": "https://sbi.bank.in/"
+    },
+    {
+      "id": "sbi6",
+      "name": "SBI Kisan Vikas Patra Account",
+      "description": "Savings scheme for farmers and agricultural workers with government backing.",
+      "interestRate": "7.00% p.a.",
+      "targetGroup": "Farmers & Agri Workers",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": 200000,
+        "minIncome": null,
+        "occupations": ["Farmer", "Agricultural Worker"]
+      },
+      "suitableFor": ["Agriculture", "Savings"],
+      "benefits": [
+        "Government-backed scheme",
+        "Fixed maturity period",
+        "Can be transferred",
+        "Kisan Credit Card linkage",
+        "Crop insurance benefits"
+      ],
+      "applicationProcess": [
+        "Visit SBI branch with land ownership documents",
+        "Fill KVP application form",
+        "Submit farmer identification documents",
+        "Minimum investment ₹1,000 (no maximum limit)",
+        "Receive KVP certificate immediately",
+        "Money doubles in approximately 10 years"
+      ],
+      "documentsRequired": [
+        "Land ownership documents / Lease agreement",
+        "Farmer ID card / Kisan Credit Card (if available)",
+        "Identity Proof: Aadhaar / Voter ID / Driving License",
+        "Address Proof: Aadhaar / Ration Card",
+        "PAN Card (for investments above ₹50,000)",
+        "Recent passport-size photographs (2 copies)"
+      ],
+      "howToApply": "Visit SBI branch with land documents. Minimum ₹1,000 investment. Certificate issued immediately. Can be transferred to another person. Premature withdrawal after 2.5 years with penalty. Ideal for farmers wanting safe, government-backed returns. Link with Kisan Credit Card for additional benefits.",
+      "bankContact": {
+        "customerCare": "1800 11 2211 (Toll-Free) / 1800 425 3800",
+        "kisanCallCenter": "1800 180 1551",
+        "email": "agri.helpdesk@sbi.co.in",
+        "website": "https://sbi.bank.in/",
+        "smsService": "SMS 'KISAN' to 9223440000"
+      },
+      "source": "https://sbi.bank.in/"
+    },
+    {
+      "id": "sbi3",
+      "name": "SBI Student Plus Account",
+      "description": "Zero balance account for students with digital banking benefits and scholarship tracking.",
+      "interestRate": "4.00% p.a.",
+      "targetGroup": "Students (10-25 years)",
+      "eligibility": {
+        "minAge": 10,
+        "maxAge": 25,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": 50000,
+        "minIncome": null,
+        "occupations": ["Student"]
+      },
+      "suitableFor": ["Education", "Savings"],
+      "benefits": [
+        "Zero balance account",
+        "Free international debit card",
+        "Waiver on education loan processing fee",
+        "Scholarship alerts",
+        "Free mobile banking"
+      ],
+      "source": "https://sbi.bank.in/"
+    },
+    {
+      "id": "sbi4",
+      "name": "PMJDY - Jan Dhan Account (SBI)",
+      "description": "Basic savings bank deposit account with no minimum balance requirement under PM Jan Dhan Yojana.",
+      "interestRate": "3.00% p.a.",
+      "targetGroup": "All Citizens, Priority for SC/ST/OBC",
+      "eligibility": {
+        "minAge": 10,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Government Schemes"],
+      "benefits": [
+        "No minimum balance",
+        "RuPay debit card with insurance",
+        "Accident insurance up to ₹2 lakh",
+        "Overdraft facility available",
+        "Direct benefit transfer from govt"
+      ],
+      "source": "https://sbi.bank.in/"
+    },
+    {
+      "id": "sbi5",
+      "name": "SBI Salary Package Account",
+      "description": "Comprehensive salary account for salaried individuals with preferential rates and benefits.",
+      "interestRate": "4.00% p.a.",
+      "targetGroup": "Salaried Employees",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 60,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": 15000,
+        "occupations": ["Salaried"]
+      },
+      "suitableFor": ["Savings", "Investment"],
+      "benefits": [
+        "Zero minimum balance",
+        "Free personal accident insurance",
+        "Pre-approved personal loan",
+        "Free VISA/Master debit card",
+        "Higher interest on FD"
+      ],
+      "source": "https://sbi.bank.in/"
+    },
+    {
+      "id": "sbi6",
+      "name": "SBI Kisan Vikas Patra Account",
+      "description": "Savings scheme for farmers and agricultural workers with government backing.",
+      "interestRate": "7.00% p.a.",
+      "targetGroup": "Farmers & Agri Workers",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": 200000,
+        "minIncome": null,
+        "occupations": ["Farmer", "Agricultural Worker"]
+      },
+      "suitableFor": ["Agriculture", "Savings"],
+      "benefits": [
+        "Government-backed scheme",
+        "Fixed maturity period",
+        "Can be transferred",
+        "Kisan Credit Card linkage",
+        "Crop insurance benefits"
+      ],
+      "source": "https://sbi.bank.in/"
+    }
+  ],
+  "PNB": [
+    {
+      "id": "pnb1",
+      "name": "PNB Sarva Shakti Mahila Account",
+      "description": "Special account for women empowerment with exclusive benefits and concessional loan rates.",
+      "interestRate": "6.25% p.a.",
+      "targetGroup": "Women (18+ years)",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Female",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Business", "Savings", "Education"],
+      "benefits": [
+        "Concessional loans for business",
+        "Free DEMAT and trading account",
+        "Personal accident insurance",
+        "Lower processing fees",
+        "Financial literacy workshops"
+      ],
+      "source": "https://pnb.bank.in/"
+    },
+    {
+      "id": "pnb2",
+      "name": "PNB Vayoshree Senior Citizen Scheme",
+      "description": "Comprehensive savings and pension scheme for senior citizens with doorstep banking.",
+      "interestRate": "7.75% p.a.",
+      "targetGroup": "Senior Citizens (60+ years)",
+      "eligibility": {
+        "minAge": 60,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Retirement", "Healthcare", "Savings"],
+      "benefits": [
+        "Highest interest rates",
+        "Doorstep banking facility",
+        "Free health insurance coverage",
+        "Priority banking services",
+        "No minimum balance for 75+"
+      ],
+      "source": "https://pnb.bank.in/"
+    },
+    {
+      "id": "pnb3",
+      "name": "PNB Yuva Shakti Account",
+      "description": "Youth-focused savings account with digital banking features and entrepreneurship support.",
+      "interestRate": "5.00% p.a.",
+      "targetGroup": "Youth (18-35 years)",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 35,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Business", "Education"],
+      "benefits": [
+        "Startup loan assistance",
+        "Free mobile/net banking",
+        "No charges on NEFT/RTGS",
+        "Free RuPay platinum card",
+        "Skill development programs"
+      ],
+      "source": "https://pnb.bank.in/"
+    },
+    {
+      "id": "pnb4",
+      "name": "PNB SC/ST Development Scheme",
+      "description": "Special initiative for financial inclusion of SC/ST communities with subsidized services.",
+      "interestRate": "5.50% p.a.",
+      "targetGroup": "SC/ST Community Members",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["SC", "ST"],
+        "maxIncome": 100000,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Business", "Education", "Home"],
+      "benefits": [
+        "Subsidized loan interest rates",
+        "No account maintenance charges",
+        "Government scheme linkage",
+        "Business development support",
+        "Educational loan benefits"
+      ],
+      "source": "https://pnb.bank.in/"
+    },
+    {
+      "id": "pnb5",
+      "name": "PNB Krishi Tatkal Agricultural Loan Account",
+      "description": "Quick agricultural financing for farmers with minimal documentation.",
+      "interestRate": "7.00% p.a.",
+      "targetGroup": "Farmers (18+ years)",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": 300000,
+        "minIncome": null,
+        "occupations": ["Farmer", "Agricultural Worker"]
+      },
+      "suitableFor": ["Agriculture", "Business"],
+      "benefits": [
+        "Quick loan approval",
+        "Minimal documentation",
+        "Crop insurance included",
+        "Kisan credit card facility",
+        "Weather advisory services"
+      ],
+      "source": "https://pnb.bank.in/"
+    },
+    {
+      "id": "pnb6",
+      "name": "PNB Minority Community Account",
+      "description": "Banking scheme for minority communities with accessible services and low-interest credit.",
+      "interestRate": "5.75% p.a.",
+      "targetGroup": "Minority Communities",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["Minority"],
+        "maxIncome": 150000,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Business", "Education", "Home"],
+      "benefits": [
+        "Low-interest loans",
+        "Business startup support",
+        "Educational loan subsidies",
+        "Community development linkage",
+        "Financial literacy programs"
+      ],
+      "source": "https://pnb.bank.in/"
+    }
+  ],
+  "HDFC_Bank": [
+    {
+      "id": "hdfc1",
+      "name": "HDFC Golden Years Senior Citizens Account",
+      "description": "Premium banking for senior citizens with wealth management and healthcare benefits.",
+      "interestRate": "7.25% p.a.",
+      "targetGroup": "Senior Citizens (60+ years)",
+      "eligibility": {
+        "minAge": 60,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Retirement", "Healthcare", "Investment"],
+      "benefits": [
+        "Higher FD rates",
+        "Free health checkup packages",
+        "Priority customer service",
+        "Relationship manager",
+        "Waiver on demat charges"
+      ],
+      "source": "https://www.hdfc.bank.in/"
+    },
+    {
+      "id": "hdfc2",
+      "name": "HDFC Women's Savings Account",
+      "description": "Specially designed account for women with lifestyle benefits and preferential pricing.",
+      "interestRate": "6.00% p.a.",
+      "targetGroup": "Women (18+ years)",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Female",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Investment", "Business"],
+      "benefits": [
+        "Free personal accident insurance",
+        "Special debit card with benefits",
+        "Lower home loan rates",
+        "Free locker facility",
+        "Lifestyle rewards program"
+      ],
+      "source": "https://www.hdfc.bank.in/"
+    },
+    {
+      "id": "hdfc3",
+      "name": "HDFC Kids Advantage Account",
+      "description": "Savings account for children with parental controls and financial education.",
+      "interestRate": "4.50% p.a.",
+      "targetGroup": "Children (0-18 years)",
+      "eligibility": {
+        "minAge": 0,
+        "maxAge": 18,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Student"]
+      },
+      "suitableFor": ["Education", "Savings"],
+      "benefits": [
+        "No minimum balance",
+        "Free debit card for teens",
+        "Parental oversight features",
+        "Financial literacy tools",
+        "Goal-based savings features"
+      ],
+      "source": "https://www.hdfc.bank.in/"
+    },
+    {
+      "id": "hdfc4",
+      "name": "HDFC Salary Account Advantage",
+      "description": "Feature-rich salary account for professionals with zero balance and exclusive benefits.",
+      "interestRate": "4.50% p.a.",
+      "targetGroup": "Salaried Professionals",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": 65,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": 25000,
+        "occupations": ["Salaried"]
+      },
+      "suitableFor": ["Savings", "Investment", "Home"],
+      "benefits": [
+        "Zero balance facility",
+        "Free platinum debit card",
+        "Pre-approved loans",
+        "Airport lounge access",
+        "Investment advisory services"
+      ],
+      "source": "https://www.hdfc.bank.in/"
+    },
+    {
+      "id": "hdfc5",
+      "name": "HDFC Business Power Account",
+      "description": "Current account for entrepreneurs and SMEs with business banking solutions.",
+      "interestRate": "0% (Current Account)",
+      "targetGroup": "Business Owners, Entrepreneurs",
+      "eligibility": {
+        "minAge": 21,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": 50000,
+        "occupations": ["Business Owner", "Self-Employed"]
+      },
+      "suitableFor": ["Business", "Investment"],
+      "benefits": [
+        "Free cash deposits up to limit",
+        "Trade finance solutions",
+        "Business loan pre-approval",
+        "Cash management services",
+        "Merchant services support"
+      ],
+      "source": "https://www.hdfc.bank.in/"
+    },
+    {
+      "id": "hdfc6",
+      "name": "HDFC Savings Max Young Saver",
+      "description": "Digital-first account for young adults with lifestyle rewards and investment options.",
+      "interestRate": "5.50% p.a.",
+      "targetGroup": "Young Adults (18-28 years)",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 28,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Investment", "Education"],
+      "benefits": [
+        "Cashback on transactions",
+        "Instant personal loan facility",
+        "Free forex card for travel",
+        "Investment guidance",
+        "Digital wallet integration"
+      ],
+      "source": "https://www.hdfc.bank.in/"
+    }
+  ],
+  "ICICI_Bank": [
+    {
+      "id": "icici1",
+      "name": "ICICI Bank Senior Citizen Care Account",
+      "description": "Dedicated banking for senior citizens with health and wealth management benefits.",
+      "interestRate": "7.50% p.a.",
+      "targetGroup": "Senior Citizens (60+ years)",
+      "eligibility": {
+        "minAge": 60,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Retirement", "Healthcare", "Savings"],
+      "benefits": [
+        "Enhanced interest rates on FD",
+        "Free annual health checkup",
+        "Doorstep banking services",
+        "Priority branch service",
+        "Emergency cash facility"
+      ],
+      "source": "https://www.icici.bank.in/"
+    },
+    {
+      "id": "icici2",
+      "name": "ICICI Young Stars Account",
+      "description": "Banking for children and teens with safety features and parental monitoring.",
+      "interestRate": "4.00% p.a.",
+      "targetGroup": "Children & Teens (0-18 years)",
+      "eligibility": {
+        "minAge": 0,
+        "maxAge": 18,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Student"]
+      },
+      "suitableFor": ["Education", "Savings"],
+      "benefits": [
+        "Zero balance account",
+        "Pocket Money Cards for kids",
+        "Parental control features",
+        "Savings goals tracker",
+        "Financial education modules"
+      ],
+      "source": "https://www.icici.bank.in/"
+    },
+    {
+      "id": "icici3",
+      "name": "ICICI Women's Account",
+      "description": "Banking solutions empowering women with exclusive benefits and preferential rates.",
+      "interestRate": "6.00% p.a.",
+      "targetGroup": "Women (18+ years)",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Female",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Business", "Investment"],
+      "benefits": [
+        "Lower interest on loans",
+        "Free personal accident cover",
+        "Shopping and lifestyle benefits",
+        "Free investment advisory",
+        "Women entrepreneurship support"
+      ],
+      "source": "https://www.icici.bank.in/"
+    },
+    {
+      "id": "icici4",
+      "name": "ICICI Salary Account",
+      "description": "Premium salary account with comprehensive banking and lifestyle benefits.",
+      "interestRate": "4.50% p.a.",
+      "targetGroup": "Salaried Employees",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 60,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": 20000,
+        "occupations": ["Salaried"]
+      },
+      "suitableFor": ["Savings", "Investment", "Home"],
+      "benefits": [
+        "Zero balance requirement",
+        "Free personal loan offers",
+        "Airport lounge access",
+        "Cashback on bill payments",
+        "Investment platforms access"
+      ],
+      "source": "https://www.icici.bank.in/"
+    },
+    {
+      "id": "icici5",
+      "name": "ICICI Rural Development Account",
+      "description": "Financial inclusion account for rural population with government scheme linkage.",
+      "interestRate": "4.00% p.a.",
+      "targetGroup": "Rural Population",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": 100000,
+        "minIncome": null,
+        "occupations": ["Farmer", "Agricultural Worker", "Self-Employed"]
+      },
+      "suitableFor": ["Agriculture", "Savings"],
+      "benefits": [
+        "No minimum balance",
+        "Micro-insurance coverage",
+        "Micro ATM facility",
+        "Government DBT enabled",
+        "Financial literacy support"
+      ],
+      "source": "https://www.icici.bank.in/"
+    },
+    {
+      "id": "icici6",
+      "name": "ICICI Advantage Savings Account",
+      "description": "Flexible savings account with tiered benefits based on balance maintained.",
+      "interestRate": "5.00% p.a.",
+      "targetGroup": "All Ages (18+ years)",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Investment"],
+      "benefits": [
+        "Tiered interest rates",
+        "Multicurrency debit card",
+        "Free NEFT/RTGS/IMPS",
+        "Instant overdraft facility",
+        "Integrated investment platform"
+      ],
+      "source": "https://www.icici.bank.in/"
+    }
+  ],
+  "Axis_Bank": [
+    {
+      "id": "axis1",
+      "name": "Axis Prime Senior Savings Account",
+      "description": "Exclusive banking for senior citizens with premium benefits and higher returns.",
+      "interestRate": "7.25% p.a.",
+      "targetGroup": "Senior Citizens (60+ years)",
+      "eligibility": {
+        "minAge": 60,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Retirement", "Healthcare", "Savings"],
+      "benefits": [
+        "Higher FD interest rates",
+        "Free annual health screening",
+        "Dedicated relationship manager",
+        "Priority banking services",
+        "Waived transaction charges"
+      ],
+      "source": "https://www.axisbank.com/"
+    },
+    {
+      "id": "axis2",
+      "name": "Axis Shakti Woman's Savings Account",
+      "description": "Banking solution designed for women with exclusive rewards and benefits.",
+      "interestRate": "6.00% p.a.",
+      "targetGroup": "Women (18+ years)",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Female",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Business", "Investment"],
+      "benefits": [
+        "Personal accident insurance cover",
+        "Discounts on locker rental",
+        "Lifestyle privileges",
+        "Free platinum debit card",
+        "Preferential pricing on loans"
+      ],
+      "source": "https://www.axisbank.com/"
+    },
+    {
+      "id": "axis3",
+      "name": "Axis Future Stars Youth Account",
+      "description": "Modern banking for youth with digital features and zero balance benefit.",
+      "interestRate": "5.25% p.a.",
+      "targetGroup": "Youth (18-30 years)",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": 30,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": null,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Savings", "Education", "Business"],
+      "benefits": [
+        "Zero balance account",
+        "Free international debit card",
+        "Student loan assistance",
+        "Startup funding support",
+        "Mobile-first banking"
+      ],
+      "source": "https://www.axisbank.com/"
+    },
+    {
+      "id": "axis4",
+      "name": "Axis Samridhi SC/ST Special Scheme",
+      "description": "Empowerment scheme for SC/ST communities with subsidized banking services.",
+      "interestRate": "5.50% p.a.",
+      "targetGroup": "SC/ST Community",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["SC", "ST"],
+        "maxIncome": 120000,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Business", "Education", "Home"],
+      "benefits": [
+        "Interest rate subsidies on loans",
+        "Government scheme integration",
+        "No processing fees",
+        "Skill development training",
+        "Business mentorship programs"
+      ],
+      "source": "https://www.axisbank.com/"
+    },
+    {
+      "id": "axis5",
+      "name": "Axis Kisan Prosperity Account",
+      "description": "Comprehensive banking for farmers with agricultural credit and insurance.",
+      "interestRate": "6.50% p.a.",
+      "targetGroup": "Farmers (18+ years)",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["All"],
+        "maxIncome": 250000,
+        "minIncome": null,
+        "occupations": ["Farmer", "Agricultural Worker"]
+      },
+      "suitableFor": ["Agriculture", "Business"],
+      "benefits": [
+        "Kisan Credit Card facility",
+        "Crop insurance coverage",
+        "Agriculture equipment loans",
+        "Weather updates service",
+        "Market price information"
+      ],
+      "source": "https://www.axisbank.com/"
+    },
+    {
+      "id": "axis6",
+      "name": "Axis OBC Vikas Account",
+      "description": "Development-focused account for OBC community with preferential benefits.",
+      "interestRate": "5.75% p.a.",
+      "targetGroup": "OBC Community Members",
+      "eligibility": {
+        "minAge": 18,
+        "maxAge": null,
+        "gender": "Any",
+        "categories": ["OBC"],
+        "maxIncome": 150000,
+        "minIncome": null,
+        "occupations": ["Any"]
+      },
+      "suitableFor": ["Business", "Education", "Savings"],
+      "benefits": [
+        "Reduced loan interest rates",
+        "Education loan fee waivers",
+        "Government scheme connectivity",
+        "Business loan facilitation",
+        "Free financial advisory"
+      ],
+      "source": "https://www.axisbank.com/"
+    }
+  ]
+}
