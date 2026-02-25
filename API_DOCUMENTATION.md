@@ -1,133 +1,24 @@
 # Banking Scheme Guidance System - API Documentation
 
 ## Overview
-This API provides comprehensive banking scheme information for Indian users. It includes filtering, comparison, and detailed scheme information across multiple major Indian banks.
+This API provides banking scheme information and filtering. It runs as Next.js API routes under the same domain as the frontend.
 
 ## Base URL
 ```
-http://localhost:5000/api
+http://localhost:3000/api
+```
+
+In production (Vercel), use the same base as the deployed site:
+```
+https://your-domain.vercel.app/api
 ```
 
 ---
 
 ## Endpoints
 
-### 1. Health Check
-Check if the server is running and healthy.
-
-**Request:**
-```http
-GET /api/health
-```
-
-**Response (200 OK):**
-```json
-{
-  "status": "OK",
-  "message": "Server is running",
-  "timestamp": "2026-02-25T10:30:00.000Z",
-  "environment": "development"
-}
-```
-
----
-
-### 2. Get All Schemes
-Retrieve all banking schemes with optional filtering.
-
-**Request:**
-```http
-GET /api/schemes?category=Education Loans&bank=SBI&limit=10
-```
-
-**Query Parameters:**
-- `category` (optional): Filter by scheme category (e.g., "Education Loans", "Home Loans")
-- `bank` (optional): Filter by bank name (e.g., "SBI", "HDFC Bank")
-- `limit` (optional): Maximum results to return (default: 50, max: 100)
-
-**Response (200 OK):**
-```json
-{
-  "success": true,
-  "total": 45,
-  "filtered": 3,
-  "returned": 3,
-  "schemes": [
-    {
-      "id": "sbi_education_1",
-      "bank_name": "State Bank of India (SBI)",
-      "scheme_category": "Education Loans",
-      "scheme_name": "SBI Education Loan for Higher Education",
-      "description": "Affordable education loans for pursuing higher education...",
-      "target_audience": "Students pursuing graduation, post-graduation...",
-      "minimum_income_required": "No minimum income required",
-      "minimum_age": 18,
-      "maximum_age": 35,
-      "loan_amount_min": "₹50,000",
-      "loan_amount_max": "₹1,50,00,000",
-      "interest_rate_range": "7.5% - 9.5%",
-      "processing_fee": "₹0 to ₹1000",
-      "repayment_tenure": "3 months to 15 years",
-      "collateral_required": "No collateral for loans up to ₹7.5 lakh",
-      "key_features": [...],
-      "required_documents": [...],
-      "eligibility_criteria": [...],
-      "pros": [...],
-      "cons": [...],
-      "official_website_reference": "www.sbi.co.in/education-loans",
-      "last_updated": "2026-02-25"
-    }
-  ],
-  "timestamp": "2026-02-25T10:30:00.000Z"
-}
-```
-
-**Error Response (500):**
-```json
-{
-  "success": false,
-  "error": "Failed to fetch schemes",
-  "timestamp": "2026-02-25T10:30:00.000Z"
-}
-```
-
----
-
-### 3. Get Scheme by ID
-Retrieve detailed information about a specific scheme.
-
-**Request:**
-```http
-GET /api/schemes/sbi_education_1
-```
-
-**Response (200 OK):**
-```json
-{
-  "success": true,
-  "scheme": {
-    "id": "sbi_education_1",
-    "bank_name": "State Bank of India (SBI)",
-    "scheme_category": "Education Loans",
-    // ... full scheme details
-  },
-  "timestamp": "2026-02-25T10:30:00.000Z"
-}
-```
-
-**Error Response (404):**
-```json
-{
-  "success": false,
-  "error": "Scheme not found",
-  "timestamp": "2026-02-25T10:30:00.000Z"
-}
-```
-
----
-
-### 4. Get All Banks
-Retrieve list of all banks with their schemes.
+### 1. Get All Banks
+Returns the list of banks available in the data source.
 
 **Request:**
 ```http
@@ -138,16 +29,17 @@ GET /api/banks
 ```json
 {
   "success": true,
-  "count": 8,
+  "count": 9,
   "banks": [
     "Axis Bank",
     "Bank of Baroda",
-    "Canara Bank",
     "HDFC Bank",
     "ICICI Bank",
+    "Kotak Mahindra Bank",
     "Punjab National Bank (PNB)",
     "State Bank of India (SBI)",
-    "Union Bank of India"
+    "Union Bank of India",
+    "Government-backed (All Banks)"
   ],
   "timestamp": "2026-02-25T10:30:00.000Z"
 }
@@ -155,41 +47,42 @@ GET /api/banks
 
 ---
 
-### 5. Get All Categories
-Retrieve all available loan categories.
+### 2. Get Schemes by Bank
+Returns all schemes for a selected bank.
 
 **Request:**
 ```http
-GET /api/categories
+GET /api/schemes/Axis%20Bank
 ```
 
 **Response (200 OK):**
 ```json
 {
   "success": true,
-  "count": 8,
-  "categories": [
-    "Agriculture Loans",
-    "Education Loans",
-    "Fixed Deposits",
-    "Government-backed schemes",
-    "Home Loans",
-    "MSME / Business Loans",
-    "Personal Loans",
-    "Savings Accounts"
-  ],
-  "timestamp": "2026-02-25T10:30:00.000Z"
+  "bank": "Axis Bank",
+  "count": 5,
+  "schemes": [
+    {
+      "id": "axis_home_1",
+      "bank_name": "Axis Bank",
+      "scheme_category": "Home Loans",
+      "scheme_name": "Axis Home Loan",
+      "interest_rate_range": "6.8% - 8.6%",
+      "repayment_tenure": "5 to 30 years",
+      "last_updated": "2026-02-25"
+    }
+  ]
 }
 ```
 
 ---
 
-### 6. Filter Schemes (Main Filtering Endpoint) ⭐
-Filter schemes based on user eligibility criteria and preferences.
+### 3. Filter Schemes (Main Endpoint)
+Filters schemes based on user criteria and returns ranked results.
 
 **Request:**
 ```http
-POST /api/filter
+POST /api/filter-schemes
 Content-Type: application/json
 
 {
@@ -197,7 +90,7 @@ Content-Type: application/json
   "income": 500000,
   "purpose": "Home Loans",
   "loanAmount": 2000000,
-  "bank": "SBI",
+  "bank": "Axis Bank",
   "limit": 10
 }
 ```
@@ -205,12 +98,12 @@ Content-Type: application/json
 **Request Body Parameters:**
 | Parameter | Type | Required | Description |
 |-----------|------|----------|-------------|
-| `age` | number | ✓ | User's age (18-100) |
-| `income` | number | ✓ | Annual income in rupees |
-| `purpose` | string | ✓ | Loan purpose/category (e.g., "Home Loans", "Personal Loans") |
-| `loanAmount` | number | ✗ | Required loan amount in rupees |
-| `bank` | string | ✗ | Specific bank name to filter (optional) |
-| `limit` | number | ✗ | Maximum results (default: 10, max: 50) |
+| `age` | number | optional | User age (18-100) |
+| `income` | number | optional | Annual income (rupees) |
+| `purpose` | string | optional | Category or tag (e.g., "Home Loans", "Single Child") |
+| `loanAmount` | number | optional | Required loan amount (rupees) |
+| `bank` | string | optional | Bank name filter |
+| `limit` | number | optional | Max results (default: 10) |
 
 **Response (200 OK):**
 ```json
@@ -221,25 +114,17 @@ Content-Type: application/json
     "income": 500000,
     "loanAmount": 2000000,
     "purpose": "Home Loans",
-    "bank": "SBI"
+    "bank": "Axis Bank"
   },
-  "totalSchemes": 45,
+  "totalSchemes": 48,
   "matchedSchemes": 2,
   "schemes": [
     {
-      "id": "sbi_home_1",
-      "bank_name": "State Bank of India (SBI)",
+      "id": "axis_home_1",
+      "bank_name": "Axis Bank",
       "scheme_category": "Home Loans",
-      "scheme_name": "SBI Home Loan - Priority Lending Scheme",
-      "matchScore": 95,
-      // ... other scheme details
-    },
-    {
-      "id": "sbi_home_2",
-      "bank_name": "State Bank of India (SBI)",
-      "scheme_category": "Home Loans",
-      "matchScore": 87,
-      // ... other scheme details
+      "scheme_name": "Axis Home Loan",
+      "matchScore": 95
     }
   ],
   "timestamp": "2026-02-25T10:30:00.000Z"
@@ -250,14 +135,33 @@ Content-Type: application/json
 ```json
 {
   "success": false,
-  "error": "Valid age (18-100) is required",
-  "timestamp": "2026-02-25T10:30:00.000Z"
+  "error": "Age must be between 18 and 100"
 }
 ```
 
 ---
 
-### 7. Compare Schemes
+## Category Values
+The API supports these categories:
+
+- Education Loans
+- Home Loans
+- Personal Loans
+- MSME / Business Loans
+- Agriculture Loans
+- Government-backed schemes
+- Fixed Deposits
+- Savings Accounts
+- Single Child (tag-based)
+- Girl Child (tag-based)
+
+---
+
+## Notes
+
+- Tag-based categories (Single Child, Girl Child) are matched against `scheme_tags` in data.
+- All data is served from `server/data/bank_schemes.json`.
+- Use URL encoding when calling `/api/schemes/:bankId`.
 Compare 2-5 schemes side by side.
 
 **Request:**

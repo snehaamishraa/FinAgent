@@ -1,20 +1,21 @@
 # Banking Scheme Guidance System
 
-A rule-based web application that helps users discover relevant bank schemes based on their eligibility criteria.
+A rule-based web application that helps users discover relevant Indian bank schemes based on eligibility criteria. It uses a structured JSON data source and Next.js API routes for filtering.
 
 ## Features
 
-- 🏦 Multiple bank scheme databases
-- 🎯 Rule-based filtering (no AI/ML)
-- 🎨 Neon-themed modern UI
-- 📱 Fully responsive design
-- ♿ Accessible and beginner-friendly
+- Multiple Indian banks and government-backed schemes
+- Rule-based filtering (no AI/ML)
+- Quick Filter flow for fast scheme discovery
+- Bank-wise browsing flow for detailed exploration
+- Responsive UI with clear, consistent styling
 
 ## Tech Stack
 
 - **Frontend**: Next.js (React)
-- **Backend**: Node.js + Express
-- **Styling**: Custom CSS with neon theme
+- **API**: Next.js API routes (`pages/api`)
+- **Styling**: CSS Modules
+- **Data**: JSON file (`server/data/bank_schemes.json`)
 
 ## Getting Started
 
@@ -24,52 +25,55 @@ A rule-based web application that helps users discover relevant bank schemes bas
 npm install
 ```
 
-### Running the Application
+### Run the App
 
-**Option 1: Run both frontend and backend together**
-```bash
-npm run dev:all
-```
-
-**Option 2: Run separately**
-
-Terminal 1 (Frontend):
 ```bash
 npm run dev
 ```
 
-Terminal 2 (Backend):
-```bash
-npm run server
-```
-
 ### Access
 
-- Frontend: http://localhost:3000
-- Backend API: http://localhost:5000
+- App: http://localhost:3000
+- API: http://localhost:3000/api
 
-## Project Structure
+## Main Pages
 
-```
-├── pages/              # Next.js pages
-├── components/         # React components
-├── styles/            # CSS styles
-├── server/            # Express backend
-│   ├── index.js       # Server entry
-│   └── data/          # Scheme data
-└── public/            # Static assets
-```
+- `/` Home
+- `/quick-filter` Quick scheme search
+- `/select-bank` Choose a bank and browse
+- `/schemes/[bankId]` Bank-specific schemes
+- `/scheme-details` Detailed scheme view
 
-## Important Notes
+## Categories
 
-- This is a **rule-based system only** - no AI, ML, or LLMs used
-- Schemes and data are **dummy/demo data** for educational purposes
-- Results are **informational only** and not actual banking advice
-- No personal data is stored
+- Education Loans
+- Home Loans
+- Personal Loans
+- MSME / Business Loans
+- Agriculture Loans
+- Government-backed schemes
+- Fixed Deposits
+- Savings Accounts
+- Single Child (tag-based)
+- Girl Child (tag-based)
+
+## Data Source
+
+All schemes are stored in `server/data/bank_schemes.json`. Each entry includes:
+
+- Bank and scheme name
+- Category and tags
+- Eligibility rules
+- Interest rate range
+- Documents and benefits
+
+## Notes
+
+- Rule-based system only; no AI or ML.
+- Data is for informational/demo use.
+- No personal data is stored.
 
 ## Disclaimer
 
-This application is for **educational and demonstration purposes only**. All bank names and schemes are fictional. Always consult with actual banks for real financial products and services.
-
-Team Member- Saloni
+This application is for educational and demonstration purposes only. Always verify details with the official bank or government source.
 
