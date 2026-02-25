@@ -79,14 +79,14 @@ export default function Home() {
             <div className={styles.categoriesSection}>
               <h2 className={styles.sectionTitle}>Browse by Category</h2>
               <div className={styles.categoriesGrid}>
-                <button className={styles.categoryTag} onClick={() => handleCategoryClick('Education Loans')}>📚 Education</button>
+                <button className={styles.categoryTag} onClick={() => handleCategoryClick('Education Loans')}>📚 Education Loans</button>
                 <button className={styles.categoryTag} onClick={() => handleCategoryClick('Home Loans')}>🏠 Home Loans</button>
                 <button className={styles.categoryTag} onClick={() => handleCategoryClick('Personal Loans')}>💰 Personal Loans</button>
-                <button className={styles.categoryTag} onClick={() => handleCategoryClick('Business Loans')}>🏢 Business</button>
-                <button className={styles.categoryTag} onClick={() => handleCategoryClick('Agriculture Loans')}>🌾 Agriculture</button>
-                <button className={styles.categoryTag} onClick={() => handleCategoryClick('Savings Schemes')}>💳 Savings</button>
-                <button className={styles.categoryTag} onClick={() => handleCategoryClick('Girl Child')}>👧 Girl Child</button>
-                <button className={styles.categoryTag} onClick={() => handleCategoryClick('Single Child')}>👨‍👩‍👧 Single Child</button>
+                <button className={styles.categoryTag} onClick={() => handleCategoryClick('MSME / Business Loans')}>🏢 Business Loans</button>
+                <button className={styles.categoryTag} onClick={() => handleCategoryClick('Agriculture Loans')}>🌾 Agriculture Loans</button>
+                <button className={styles.categoryTag} onClick={() => handleCategoryClick('Savings Accounts')}>💳 Savings Accounts</button>
+                <button className={styles.categoryTag} onClick={() => handleCategoryClick('Fixed Deposits')}>💎 Fixed Deposits</button>
+                <button className={styles.categoryTag} onClick={() => handleCategoryClick('Government-backed schemes')}>🏛️ Government Schemes</button>
               </div>
             </div>
 
