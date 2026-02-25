@@ -23,9 +23,7 @@ export default function QuickFilter() {
     'Agriculture Loans',
     'Government-backed schemes',
     'Fixed Deposits',
-    'Savings Accounts',
-    'Single Child',
-    'Girl Child'
+    'Savings Accounts'
   ];
 
   const handleChange = (e) => {
