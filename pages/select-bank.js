@@ -9,6 +9,7 @@ export default function SelectBank() {
   const [selectedBank, setSelectedBank] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+  const [activeTab, setActiveTab] = useState('all');
 
   useEffect(() => {
     fetchBanks();
@@ -36,21 +37,41 @@ export default function SelectBank() {
     }
   };
 
-  const formatBankName = (bankId) => {
-    const bankNames = {
-      'SBI': 'State Bank of India (SBI)',
-      'PNB': 'Punjab National Bank (PNB)',
-      'HDFC_Bank': 'HDFC Bank',
-      'ICICI_Bank': 'ICICI Bank',
-      'Axis_Bank': 'Axis Bank'
-    };
-    return bankNames[bankId] || bankId.replace(/_/g, ' ');
+  const categorizeBank = (bankName) => {
+    if (bankName.includes('Government')) return 'government';
+    if (bankName.includes('SBI') || bankName.includes('PNB') || bankName.includes('Union') || bankName.includes('Baroda')) return 'public';
+    return 'private';
   };
+
+  const getBankIcon = (bankName) => {
+    const icons = {
+      'State Bank of India': '🏛️',
+      'HDFC Bank': '🏦',
+      'ICICI Bank': '💳',
+      'Axis Bank': '⚙️',
+      'Kotak': '🎯',
+      'Punjab National': '🇮🇳',
+      'Bank of Baroda': '🌟',
+      'Union Bank': '🤝',
+      'Government': '📋'
+    };
+    for (const [key, icon] of Object.entries(icons)) {
+      if (bankName.includes(key)) return icon;
+    }
+    return '🏦';
+  };
+
+  const filterBanks = (banks) => {
+    if (activeTab === 'all') return banks;
+    return banks.filter(b => categorizeBank(b) === activeTab);
+  };
+
+  const filteredBanks = filterBanks(banks);
 
   return (
     <>
       <Head>
-        <title>Select Bank - Banking Scheme Guidance</title>
+        <title>Browse Banks - Banking Scheme Guidance</title>
       </Head>
 
       <div className={styles.container}>
@@ -58,16 +79,54 @@ export default function SelectBank() {
           <button onClick={() => router.push('/')} className={styles.backButton}>
             ← Back to Home
           </button>
+          <h1 className={styles.headerTitle}>Browse Banks</h1>
         </header>
 
         <main className={styles.main}>
           <div className={styles.content}>
-            <h1 className={styles.title}>
-              Select Your <span className={styles.neonText}>Bank</span>
-            </h1>
-            <p className={styles.subtitle}>
-              Choose a bank to explore their available schemes and plans
-            </p>
+            {/* Hero Section */}
+            <div className={styles.heroSection}>
+              <h2 className={styles.title}>
+                Explore <span className={styles.neonText}>Banking Schemes</span>
+              </h2>
+              <p className={styles.subtitle}>
+                Choose a bank to discover all available schemes and benefits
+              </p>
+            </div>
+
+            {/* Tabs */}
+            {!loading && !error && (
+              <div className={styles.tabsContainer}>
+                <button
+                  className={`${styles.tab} ${activeTab === 'all' ? styles.activeTab : ''}`}
+                  onClick={() => setActiveTab('all')}
+                >
+                  <span className={styles.tabIcon}>📊</span>
+                  All Banks
+                </button>
+                <button
+                  className={`${styles.tab} ${activeTab === 'public' ? styles.activeTab : ''}`}
+                  onClick={() => setActiveTab('public')}
+                >
+                  <span className={styles.tabIcon}>🏛️</span>
+                  Public Sector
+                </button>
+                <button
+                  className={`${styles.tab} ${activeTab === 'private' ? styles.activeTab : ''}`}
+                  onClick={() => setActiveTab('private')}
+                >
+                  <span className={styles.tabIcon}>💼</span>
+                  Private Sector
+                </button>
+                <button
+                  className={`${styles.tab} ${activeTab === 'government' ? styles.activeTab : ''}`}
+                  onClick={() => setActiveTab('government')}
+                >
+                  <span className={styles.tabIcon}>🏵️</span>
+                  Government
+                </button>
+              </div>
+            )}
 
             {loading && (
               <div className={styles.loading}>
@@ -88,7 +147,7 @@ export default function SelectBank() {
             {!loading && !error && (
               <>
                 <div className={styles.bankGrid}>
-                  {banks.map((bank) => (
+                  {filteredBanks.map((bank) => (
                     <div
                       key={bank}
                       className={`${styles.bankCard} ${
@@ -96,9 +155,9 @@ export default function SelectBank() {
                       }`}
                       onClick={() => handleBankSelect(bank)}
                     >
-                      <div className={styles.bankIcon}>🏦</div>
-                      <h3>{formatBankName(bank)}</h3>
-                      <p>Explore schemes and benefits</p>
+                      <div className={styles.bankIcon}>{getBankIcon(bank)}</div>
+                      <h3>{bank}</h3>
+                      <p>Explore schemes & benefits</p>
                       {selectedBank === bank && (
                         <div className={styles.checkmark}>✓</div>
                       )}
@@ -106,20 +165,25 @@ export default function SelectBank() {
                   ))}
                 </div>
 
+                {filteredBanks.length === 0 && (
+                  <div className={styles.noResults}>
+                    <p>No banks found in this category</p>
+                  </div>
+                )}
+
                 <button
                   className={styles.continueButton}
                   onClick={handleContinue}
                   disabled={!selectedBank}
                 >
-                  Continue to Schemes
+                  View Selected Bank's Schemes
                   <span className={styles.arrow}>→</span>
                 </button>
 
                 <div className={styles.info}>
                   <p>
-                    💡 <strong>Note:</strong> Scheme information based on publicly available 
-                    data from official Indian bank sources. For the most current details, 
-                    please visit the official bank website or contact the bank directly.
+                    💡 <strong>Tip:</strong> Select a bank above to browse all available schemes. 
+                    Click the scheme card to view detailed eligibility and application information.
                   </p>
                 </div>
               </>
