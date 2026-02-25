@@ -1,8 +1,15 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const router = useRouter();
+
+  const handleCategoryClick = (category) => {
+    router.push(`/select-bank?category=${encodeURIComponent(category)}`);
+  };
+
   return (
     <>
       <Head>
@@ -72,14 +79,14 @@ export default function Home() {
             <div className={styles.categoriesSection}>
               <h2 className={styles.sectionTitle}>Browse by Category</h2>
               <div className={styles.categoriesGrid}>
-                <div className={styles.categoryTag}>📚 Education</div>
-                <div className={styles.categoryTag}>🏠 Home Loans</div>
-                <div className={styles.categoryTag}>💰 Personal Loans</div>
-                <div className={styles.categoryTag}>🏢 Business</div>
-                <div className={styles.categoryTag}>🌾 Agriculture</div>
-                <div className={styles.categoryTag}>💳 Savings</div>
-                <div className={styles.categoryTag}>👧 Girl Child</div>
-                <div className={styles.categoryTag}>👨‍👩‍👧 Single Child</div>
+                <div className={styles.categoryTag} onClick={() => handleCategoryClick('Education Loans')}>📚 Education</div>
+                <div className={styles.categoryTag} onClick={() => handleCategoryClick('Home Loans')}>🏠 Home Loans</div>
+                <div className={styles.categoryTag} onClick={() => handleCategoryClick('Personal Loans')}>💰 Personal Loans</div>
+                <div className={styles.categoryTag} onClick={() => handleCategoryClick('Business Loans')}>🏢 Business</div>
+                <div className={styles.categoryTag} onClick={() => handleCategoryClick('Agriculture Loans')}>🌾 Agriculture</div>
+                <div className={styles.categoryTag} onClick={() => handleCategoryClick('Savings Schemes')}>💳 Savings</div>
+                <div className={styles.categoryTag} onClick={() => handleCategoryClick('Girl Child')}>👧 Girl Child</div>
+                <div className={styles.categoryTag} onClick={() => handleCategoryClick('Single Child')}>👨‍👩‍👧 Single Child</div>
               </div>
             </div>
 

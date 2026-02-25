@@ -119,8 +119,8 @@
 }
 
 .schemeCard {
-  background: linear-gradient(135deg, rgba(20, 184, 166, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
-  border: 1.5px solid rgba(51, 211, 191, 0.25);
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.08) 0%, rgba(59, 130, 246, 0.08) 100%);
+  border: 1.5px solid rgba(148, 163, 184, 0.25);
   border-radius: 16px;
   padding: 2rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -143,10 +143,10 @@
 }
 
 .schemeCard:hover {
-  border-color: rgba(6, 182, 212, 0.5);
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(59, 130, 246, 0.1) 100%);
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(6, 182, 212, 0.15);
+  border-color: rgba(6, 182, 212, 0.6);
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(59, 130, 246, 0.15) 100%);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(6, 182, 212, 0.25);
 }
 
 .schemeCard:hover::before {
@@ -228,18 +228,18 @@
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  padding: 1rem 1.5rem;
-  background: linear-gradient(90deg, #06b6d4 0%, #14b8a6 100%);
+  padding: 1.05rem 2rem;
+  background: linear-gradient(135deg, #06b6d4 0%, #14b8a6 100%);
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   color: white;
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-size: 0.98rem;
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(6, 182, 212, 0.2);
+  box-shadow: 0 12px 28px rgba(6, 182, 212, 0.3);
 }
 
 .learnMoreButton::before {
@@ -249,17 +249,21 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
   transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .learnMoreButton:hover {
-  box-shadow: 0 12px 30px rgba(6, 182, 212, 0.3);
-  transform: translateY(-2px);
+  box-shadow: 0 16px 40px rgba(6, 182, 212, 0.4);
+  transform: translateY(-3px);
 }
 
 .learnMoreButton:hover::before {
   left: 100%;
+}
+
+.learnMoreButton:active {
+  transform: translateY(-1px);
 }
 
 .arrow {

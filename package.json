@@ -21,13 +21,14 @@
     "filter:example": "curl -X POST http://localhost:5000/api/filter -H 'Content-Type: application/json' -d '{\"age\":28,\"income\":600000,\"purpose\":\"Home Loans\",\"limit\":3}' | jq ."
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "next": "^14.1.0",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
-    "cors": "^2.8.5"
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "vercel": "^50.23.2"
   }
 }

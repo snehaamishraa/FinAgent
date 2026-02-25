@@ -71,6 +71,8 @@
   margin-bottom: 1.5rem;
   color: var(--text-primary);
   line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.5px;
 }
 
 .interestBadge {
@@ -78,8 +80,8 @@
   align-items: center;
   gap: 0.75rem;
   background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(20, 184, 166, 0.2));
-  border: 1px solid rgba(59, 130, 246, 0.6);
-  padding: 0.75rem 2rem;
+  border: 1.5px solid rgba(59, 130, 246, 0.6);
+  padding: 0.75rem 2.5rem;
   border-radius: 999px;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
@@ -97,9 +99,9 @@
 }
 
 .description {
-  font-size: 1.2rem;
-  line-height: 1.8;
+  font-size: 1.15rem;
   color: var(--text-secondary);
+  line-height: 1.8;
   margin-bottom: 1.5rem;
 }
 
@@ -143,8 +145,8 @@
 }
 
 .eligibilityCard {
-  background: rgba(59, 130, 246, 0.08);
-  border: 1px solid rgba(59, 130, 246, 0.25);
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.08), rgba(59, 130, 246, 0.08));
+  border: 1px solid rgba(148, 163, 184, 0.2);
   border-radius: 14px;
   padding: 1.5rem;
   text-align: center;
@@ -152,17 +154,19 @@
 }
 
 .eligibilityCard:hover {
-  background: rgba(59, 130, 246, 0.12);
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.15), rgba(59, 130, 246, 0.15));
   border-color: rgba(59, 130, 246, 0.6);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
 }
 
 .eligibilityCard h3 {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--neon-cyan);
   margin-bottom: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  font-weight: bold;
 }
 
 .eligibilityCard p {

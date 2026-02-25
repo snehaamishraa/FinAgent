@@ -18,6 +18,14 @@ export default function SelectBank() {
     fetchBanksAndCategories();
   }, []);
 
+  useEffect(() => {
+    // Check if category is passed from home page
+    if (router.query.category) {
+      setBrowseMode('category');
+      setSelectedCategory(decodeURIComponent(router.query.category));
+    }
+  }, [router.query.category]);
+
   const fetchBanksAndCategories = async () => {
     try {
       const [banksRes, schemesRes] = await Promise.all([
