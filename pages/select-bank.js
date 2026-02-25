@@ -6,23 +6,35 @@ import styles from '../styles/SelectBank.module.css';
 export default function SelectBank() {
   const router = useRouter();
   const [banks, setBanks] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [selectedBank, setSelectedBank] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [activeTab, setActiveTab] = useState('all');
+  const [browseMode, setBrowseMode] = useState('bank'); // 'bank' or 'category'
 
   useEffect(() => {
-    fetchBanks();
+    fetchBanksAndCategories();
   }, []);
 
-  const fetchBanks = async () => {
+  const fetchBanksAndCategories = async () => {
     try {
-      const response = await fetch('/api/banks');
-      const data = await response.json();
-      setBanks(data.banks);
+      const [banksRes, schemesRes] = await Promise.all([
+        fetch('/api/banks'),
+        fetch('/api/filter-schemes')
+      ]);
+      const banksData = await banksRes.json();
+      const schemesData = await schemesRes.json();
+      
+      setBanks(banksData.banks);
+      
+      // Extract unique categories from schemes
+      const uniqueCategories = [...new Set(schemesData.schemes.map(s => s.scheme_category))].sort();
+      setCategories(uniqueCategories);
       setLoading(false);
     } catch (err) {
-      setError('Failed to load banks. Please ensure the server is running.');
+      setError('Failed to load data. Please ensure the server is running.');
       setLoading(false);
     }
   };
@@ -31,10 +43,33 @@ export default function SelectBank() {
     setSelectedBank(bankId);
   };
 
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+  };
+
   const handleContinue = () => {
-    if (selectedBank) {
+    if (browseMode === 'bank' && selectedBank) {
       router.push(`/schemes/${encodeURIComponent(selectedBank)}`);
+    } else if (browseMode === 'category' && selectedCategory) {
+      router.push(`/results?category=${encodeURIComponent(selectedCategory)}`);
     }
+  };
+
+  const getCategoryIcon = (category) => {
+    const icons = {
+      'Education Loans': '🎓',
+      'Home Loans': '🏠',
+      'Personal Loans': '💰',
+      'Business Loans': '🏢',
+      'Agriculture Loans': '🌾',
+      'Savings Schemes': '💳',
+      'Girl Child': '👧',
+      'Single Child': '👦',
+      'Government': '🏵️',
+      'Investment': '📈',
+      'Insurance': '🛡️'
+    };
+    return icons[category] || '💼';
   };
 
   const categorizeBank = (bankName) => {
@@ -90,12 +125,41 @@ export default function SelectBank() {
                 Explore <span className={styles.neonText}>Banking Schemes</span>
               </h2>
               <p className={styles.subtitle}>
-                Choose a bank to discover all available schemes and benefits
+                {browseMode === 'bank' ? 'Choose a bank to discover all available schemes and benefits' : 'Browse schemes by category'}
               </p>
             </div>
 
-            {/* Tabs */}
+            {/* Mode Switcher */}
             {!loading && !error && (
+              <div className={styles.modeSwitcher}>
+                <button
+                  className={`${styles.modeButton} ${browseMode === 'bank' ? styles.activeModeButton : ''}`}
+                  onClick={() => {
+                    setBrowseMode('bank');
+                    setSelectedBank('');
+                    setSelectedCategory('');
+                    setActiveTab('all');
+                  }}
+                >
+                  <span className={styles.modeIcon}>🏦</span>
+                  Browse by Bank
+                </button>
+                <button
+                  className={`${styles.modeButton} ${browseMode === 'category' ? styles.activeModeButton : ''}`}
+                  onClick={() => {
+                    setBrowseMode('category');
+                    setSelectedBank('');
+                    setSelectedCategory('');
+                  }}
+                >
+                  <span className={styles.modeIcon}>📂</span>
+                  Browse by Category
+                </button>
+              </div>
+            )}
+
+            {/* Tabs - Bank Mode */}
+            {!loading && !error && browseMode === 'bank' && (
               <div className={styles.tabsContainer}>
                 <button
                   className={`${styles.tab} ${activeTab === 'all' ? styles.activeTab : ''}`}
@@ -138,13 +202,13 @@ export default function SelectBank() {
             {error && (
               <div className={styles.error}>
                 <p>⚠️ {error}</p>
-                <button onClick={fetchBanks} className={styles.retryButton}>
+                <button onClick={fetchBanksAndCategories} className={styles.retryButton}>
                   Try Again
                 </button>
               </div>
             )}
 
-            {!loading && !error && (
+            {!loading && !error && browseMode === 'bank' && (
               <>
                 <div className={styles.bankGrid}>
                   {filteredBanks.map((bank) => (
@@ -184,6 +248,51 @@ export default function SelectBank() {
                   <p>
                     💡 <strong>Tip:</strong> Select a bank above to browse all available schemes. 
                     Click the scheme card to view detailed eligibility and application information.
+                  </p>
+                </div>
+              </>
+            )}
+
+            {!loading && !error && browseMode === 'category' && (
+              <>
+                <div className={styles.categoryGrid}>
+                  {categories.map((category) => (
+                    <div
+                      key={category}
+                      className={`${styles.categoryCard} ${
+                        selectedCategory === category ? styles.selected : ''
+                      }`}
+                      onClick={() => handleCategorySelect(category)}
+                    >
+                      <div className={styles.categoryIcon}>{getCategoryIcon(category)}</div>
+                      <h3>{category}</h3>
+                      <p>Browse all schemes in this category</p>
+                      {selectedCategory === category && (
+                        <div className={styles.checkmark}>✓</div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+
+                {categories.length === 0 && (
+                  <div className={styles.noResults}>
+                    <p>No categories found</p>
+                  </div>
+                )}
+
+                <button
+                  className={styles.continueButton}
+                  onClick={handleContinue}
+                  disabled={!selectedCategory}
+                >
+                  View Schemes by Category
+                  <span className={styles.arrow}>→</span>
+                </button>
+
+                <div className={styles.info}>
+                  <p>
+                    💡 <strong>Tip:</strong> Select a category to see all available schemes. 
+                    Compare schemes across different banks within the same category.
                   </p>
                 </div>
               </>
