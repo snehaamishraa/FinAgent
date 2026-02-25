@@ -103,7 +103,7 @@ export default function Filter() {
       <div className={styles.container}>
         <header className={styles.header}>
           <button 
-            onClick={() => router.push(`/schemes/${bank}`)} 
+            onClick={() => router.push(`/schemes/${encodeURIComponent(bank)}`)} 
             className={styles.backButton}
           >
             ← Back to Schemes

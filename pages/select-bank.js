@@ -32,7 +32,7 @@ export default function SelectBank() {
 
   const handleContinue = () => {
     if (selectedBank) {
-      router.push(`/schemes/${selectedBank}`);
+      router.push(`/schemes/${encodeURIComponent(selectedBank)}`);
     }
   };
 

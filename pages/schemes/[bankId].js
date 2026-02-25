@@ -19,7 +19,8 @@ export default function Schemes() {
 
   const fetchSchemes = async () => {
     try {
-      const response = await fetch(`/api/schemes/${bankId}`);
+      const encodedBankId = encodeURIComponent(bankId);
+      const response = await fetch(`/api/schemes/${encodedBankId}`);
       if (!response.ok) throw new Error('Failed to fetch schemes');
       const data = await response.json();
       const normalizedSchemes = Array.isArray(data.schemes)
@@ -65,7 +66,7 @@ export default function Schemes() {
   };
 
   const handleFilterSchemes = () => {
-    router.push(`/filter?bank=${bankId}`);
+    router.push(`/filter?bank=${encodeURIComponent(bankId)}`);
   };
 
   return (
