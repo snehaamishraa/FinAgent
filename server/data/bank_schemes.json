@@ -1,0 +1,1088 @@
+{
+  "schemes": [
+    {
+      "id": "sbi_education_1",
+      "bank_name": "State Bank of India (SBI)",
+      "scheme_category": "Education Loans",
+      "scheme_name": "SBI Education Loan for Higher Education",
+      "description": "Affordable education loans for pursuing higher education in India and abroad",
+      "target_audience": "Students pursuing graduation, post-graduation, professional courses",
+      "minimum_income_required": "No minimum income required",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "loan_amount_min": "₹50,000",
+      "loan_amount_max": "₹1,50,00,000",
+      "interest_rate_range": "7.5% - 9.5%",
+      "processing_fee": "₹0 to ₹1000 (waived for CIBIL score > 750)",
+      "repayment_tenure": "3 months to 15 years (1 year moratorium after course completion)",
+      "collateral_required": "No collateral for loans up to ₹7.5 lakh; Collateral or third-party guarantee for higher amounts",
+      "key_features": [
+        "Covers full education cost including tuition, hostel, books",
+        "Flexible repayment options",
+        "Part-time/full-time working benefits",
+        "Moratorium period after course completion",
+        "Top-up loans available"
+      ],
+      "required_documents": [
+        "Completed application form",
+        "Proof of identity and address",
+        "Bank account statement (6 months)",
+        "Income proof - last 2 years IT returns or salary slips",
+        "Admission letter from institution",
+        "Course details and fee structure",
+        "Co-applicant/guarantor documents"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen or NRI",
+        "Age between 18-35 years",
+        "Admission to recognized institution",
+        "Good academic record",
+        "Co-applicant income (parents/guardians) for support"
+      ],
+      "pros": [
+        "No collateral for loans up to ₹7.5 lakh",
+        "Competitive interest rates",
+        "Flexible moratorium period",
+        "Can be used for education abroad",
+        "Easy top-up facility"
+      ],
+      "cons": [
+        "Requires guarantor for higher loan amounts",
+        "Processing takes 7-10 working days",
+        "Additional charges if repayment is late",
+        "Limited to recognized institutions"
+      ],
+      "official_website_reference": "www.sbi.co.in/education-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "sbi_home_1",
+      "bank_name": "State Bank of India (SBI)",
+      "scheme_category": "Home Loans",
+      "scheme_name": "SBI Home Loan - Priority Lending Scheme",
+      "description": "Competitive home loans for purchasing, constructing or renovating residential properties",
+      "target_audience": "Salaried individuals, self-employed professionals, businessmen",
+      "minimum_income_required": "₹3,00,000 per annum",
+      "minimum_age": 21,
+      "maximum_age": 65,
+      "loan_amount_min": "₹1,00,000",
+      "loan_amount_max": "₹3,00,00,000",
+      "interest_rate_range": "6.5% - 8.5% (floating)",
+      "processing_fee": "₹0.40% to 1% of loan amount (max ₹10,000)",
+      "repayment_tenure": "5 to 30 years",
+      "collateral_required": "Mortgage of property being purchased/built",
+      "key_features": [
+        "Flexible loan amount up to 80-90% of property value",
+        "Balance transfer facility from other banks",
+        "Top-up loans on existing SBI home loans",
+        "Option to convert floating to fixed rate",
+        "Free home loan insurance for up to 1 year",
+        "Pre-payment without penalty"
+      ],
+      "required_documents": [
+        "Loan application form",
+        "Identity proof (Aadhaar/PAN/Passport)",
+        "Address proof (utility bill/lease agreement)",
+        "Last 3 years IT returns (self-employed)",
+        "Last 6 months salary slips (salaried)",
+        "Bank statements (6-12 months)",
+        "Property documents and title search",
+        "Valuation report by bank-approved valuer"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen aged 21-65 years",
+        "Minimum monthly income ₹25,000",
+        "Stable employment (minimum 2 years for salaried)",
+        "Good credit history",
+        "Age + loan tenure should not exceed 75 years"
+      ],
+      "pros": [
+        "Low interest rates with floating options",
+        "High loan amount possible",
+        "Tax benefits on interest and principal repayment",
+        "Top-up facility at competit ive rates",
+        "Pre-payment without penalty",
+        "Free insurance coverage"
+      ],
+      "cons": [
+        "Requires property mortgage",
+        "Long processing time (30-45 days)",
+        "Strict documentation requirements",
+        "Home insurance is mandatory",
+        "Early repayment charges (2-3%) in first few years"
+      ],
+      "official_website_reference": "www.sbi.co.in/home-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "sbi_personal_1",
+      "bank_name": "State Bank of India (SBI)",
+      "scheme_category": "Personal Loans",
+      "scheme_name": "SBI Personal Loan",
+      "description": "Quick personal loans for any purpose without collateral",
+      "target_audience": "Salaried employees with stable income",
+      "minimum_income_required": "₹2,50,000 per annum",
+      "minimum_age": 21,
+      "maximum_age": 60,
+      "loan_amount_min": "₹50,000",
+      "loan_amount_max": "₹20,00,000",
+      "interest_rate_range": "9.0% - 13.0% (based on credit profile)",
+      "processing_fee": "₹500 - ₹2,500 (waived for premium customers)",
+      "repayment_tenure": "12 to 60 months",
+      "collateral_required": "None (unsecured)",
+      "key_features": [
+        "No collateral required",
+        "Quick approval in 24-48 hours",
+        "Flexible repayment tenure",
+        "Can be used for any purpose",
+        "Optional balance transfer facility",
+        "EMI protection cover available",
+        "Option to increase EMI later"
+      ],
+      "required_documents": [
+        "Recently filled application form",
+        "Identity proof",
+        "Address proof",
+        "Last 2 years IT returns or salary slips",
+        "Bank statements (6-12 months)",
+        "Employment letter/salary certificate"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen aged 21-60 years",
+        "Minimum monthly income ₹20,000",
+        "Minimum 2 years employment history",
+        "CIBIL score above 700",
+        "Stable residential address"
+      ],
+      "pros": [
+        "Fast approval and disbursal (24-48 hours)",
+        "No collateral required",
+        "Flexible tenure options",
+        "Can be used for any purpose",
+        "Low processing fees for prime customers",
+        "Partial pre-payment allowed"
+      ],
+      "cons": [
+        "Higher interest rates compared to secured loans",
+        "Requires good CIBIL score",
+        "Mandatory insurance on loan amount",
+        "Processing and documentation fees",
+        "EMI is fixed for floating rate loans"
+      ],
+      "official_website_reference": "www.sbi.co.in/personal-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "sbi_msme_1",
+      "bank_name": "State Bank of India (SBI)",
+      "scheme_category": "MSME / Business Loans",
+      "scheme_name": "SBI Trade Credit Line",
+      "description": "Working capital loans for MSMEs and small businesses for trade and business operations",
+      "target_audience": "Micro, Small & Medium Enterprises (MSMEs), traders, manufacturers",
+      "minimum_income_required": "No fixed requirement",
+      "minimum_age": 21,
+      "maximum_age": 70,
+      "loan_amount_min": "₹1,00,000",
+      "loan_amount_max": "₹1,00,00,000",
+      "interest_rate_range": "8.0% - 12.0%",
+      "processing_fee": "₹1,000 - ₹5,000",
+      "repayment_tenure": "12 to 84 months",
+      "collateral_required": "Collateral security as per bank norms; Can be availed without collateral under 50L scheme",
+      "key_features": [
+        "Working capital facility for operational needs",
+        "Balance transfer from other banks",
+        "Interest subsidy under government schemes",
+        "Flexible repayment based on business cycle",
+        "Automatic renewal option",
+        "EMI payment flexibility",
+        "Option to renew at lower rates"
+      ],
+      "required_documents": [
+        "Business registration documents",
+        "GST certificate or business license",
+        "Last 3 years audited financial statements",
+        "Latest 3 months bank statements",
+        "Income tax returns",
+        "Business plan or project report",
+        "Collateral valuation report"
+      ],
+      "eligibility_criteria": [
+        "Business in operation for minimum 2 years",
+        "Annual turnover ₹20 lakh or above",
+        "Good business credit history",
+        "Registered business (Proprietorship/Partnership/Company/LLP)",
+        "GST registered (for applicable businesses)"
+      ],
+      "pros": [
+        "Flexible working capital solution",
+        "Easy top-up on existing loans",
+        "Government subsidy available for eligible businesses",
+        "Competitive rates for good credit history",
+        "Revolving credit facility available"
+      ],
+      "cons": [
+        "Requires collateral for higher amounts",
+        "Complex documentation for businesses",
+        "Business history required (minimum 2 years)",
+        "Regular financial reporting mandatory",
+        "Audit required for companies"
+      ],
+      "official_website_reference": "www.sbi.co.in/msme-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "sbi_agriculture_1",
+      "bank_name": "State Bank of India (SBI)",
+      "scheme_category": "Agriculture Loans",
+      "scheme_name": "SBI Kisan Samridhi Loan",
+      "description": "Agriculture loans for farmers to purchase equipment, seeds, fertilizers, and land development",
+      "target_audience": "Farmers, agricultural laborers, landholders",
+      "minimum_income_required": "No fixed minimum",
+      "minimum_age": 18,
+      "maximum_age": 75,
+      "loan_amount_min": "₹10,000",
+      "loan_amount_max": "₹50,00,000",
+      "interest_rate_range": "4.0% - 7.0% (with government subsidy)",
+      "processing_fee": "₹0 (no processing fees)",
+      "repayment_tenure": "6 months to 7 years",
+      "collateral_required": "No collateral for loans up to ₹1 lakh; Collateral for higher amounts",
+      "key_features": [
+        "Government interest subsidy available",
+        "Flexible repayment based on crop season",
+        "Quick disbursal",
+        "Zero processing fees",
+        "Can be used for farm mechanization or organic farming",
+        "Crop insurance cover available",
+        "Debt waiver possibility for eligible farmers"
+      ],
+      "required_documents": [
+        "Land ownership documents or tenancy agreement",
+        "Photo identity proof (Aadhaar/Voter ID)",
+        "Address proof",
+        "Income certificate from village sarpanch",
+        "Loan application form",
+        "Collateral documents (for loans above ₹1 lakh)"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen farmer",
+        "Owner of agricultural land or tenant farmer",
+        "Age between 18-75 years",
+        "Good repayment history",
+        "Land must be free from encumbrances (in most cases)"
+      ],
+      "pros": [
+        "Very low interest rates (heavily subsidized)",
+        "Zero processing charges",
+        "Flexible repayment aligned with harvest season",
+        "Crop insurance available",
+        "Debt waiver possibility",
+        "No collateral for smaller amounts"
+      ],
+      "cons": [
+        "Complex documentation and verification process",
+        "Limited to agricultural activities only",
+        "Government subsidy restrictions may apply",
+        "Collateral required for large loans",
+        "Quarterly/annual inspections"
+      ],
+      "official_website_reference": "www.sbi.co.in/agricultural-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "sbi_govt_mudra",
+      "bank_name": "State Bank of India (SBI)",
+      "scheme_category": "Government-backed schemes",
+      "scheme_name": "Pradhan Mantri MUDRA Yojana (PMMY)",
+      "description": "Government-backed scheme to promote entrepreneurship through collateral-free business loans",
+      "target_audience": "First-time entrepreneurs, self-employed individuals, small business owners",
+      "minimum_income_required": "No minimum income requirement",
+      "minimum_age": 18,
+      "maximum_age": 65,
+      "loan_amount_min": "₹50,000",
+      "loan_amount_max": "₹10,00,000",
+      "interest_rate_range": "6.25% - 8.75%",
+      "processing_fee": "₹0 (no processing fees)",
+      "repayment_tenure": "12 to 60 months",
+      "collateral_required": "None (Collateral-free)",
+      "key_features": [
+        "Completely collateral-free",
+        "No guarantee required",
+        "Quick approval (7-10 days)",
+        "Zero processing fees",
+        "Flexible repayment based on cash flow",
+        "Available for existing businesses too",
+        "Woman entrepreneur special focus",
+        "Credit rating improvement opportunity"
+      ],
+      "required_documents": [
+        "MUDRA loan application form",
+        "Identity proof (Aadhaar/PAN/Voter ID)",
+        "Address proof",
+        "Business plan/project report",
+        "Last 2 years income documents",
+        "Business registration certificate",
+        "GST certificate (if applicable)"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen aged 18-65 years",
+        "Business idea or existing micro-business",
+        "Business should not have borrowed more than ₹10 lakh previously",
+        "No age restriction for existing businesses",
+        "Willingness to repay loan"
+      ],
+      "pros": [
+        "Completely collateral-free and guarantee-free",
+        "No processing or documentation fees",
+        "Quick approval process",
+        "Available for women entrepreneurs at lower rates",
+        "Helps build credit history",
+        "Flexible repayment terms"
+      ],
+      "cons": [
+        "Limited to small business amounts (up to ₹10 lakh)",
+        "May require business plan presentation",
+        "Bank discretion on approval",
+        "Higher interest rates than some secured loans",
+        "Regular monitoring of fund utilization"
+      ],
+      "official_website_reference": "www.sbi.co.in/mudra-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "sbi_fd_1",
+      "bank_name": "State Bank of India (SBI)",
+      "scheme_category": "Fixed Deposits",
+      "scheme_name": "SBI Fixed Deposit Scheme",
+      "description": "Safe investment option offering fixed interest rates on deposits for various tenures",
+      "target_audience": "All individuals and senior citizens seeking safe investment returns",
+      "minimum_income_required": "None (Investment based)",
+      "minimum_age": 18,
+      "maximum_age": "No upper limit",
+      "loan_amount_min": "₹1,000",
+      "loan_amount_max": "No upper limit",
+      "interest_rate_range": "2.5% - 7.0% (varies by tenure and amount)",
+      "processing_fee": "None",
+      "repayment_tenure": "7 days to 10 years",
+      "collateral_required": "Not applicable",
+      "key_features": [
+        "Safe and guaranteed returns",
+        "Flexible tenure options",
+        "Higher returns for longer tenures",
+        "Additional benefits for senior citizens (0.50% extra)",
+        "Partial or full premature withdrawal allowed",
+        "Overdraft facility available",
+        "Tax benefits under Section 80C (for specific schemes)",
+        "Online application facility"
+      ],
+      "required_documents": [
+        "Identity proof",
+        "Address proof",
+        "PAN card",
+        "Completed FD form"
+      ],
+      "eligibility_criteria": [
+        "Indian resident aged 18+ years",
+        "Senior citizens (60+ years) get additional rate benefit",
+        "NRI and HUF also eligible",
+        "Joint account holders allowed"
+      ],
+      "pros": [
+        "Complete capital safety",
+        "Predictable returns",
+        "Flexible tenure options",
+        "Easy withdrawal",
+        "Higher rates for senior citizens",
+        "No tax during investment"
+      ],
+      "cons": [
+        "Lower returns than market-based investments",
+        "Tax on interest income (TDS at 10% for non-senior citizens)",
+        "Premature withdrawal penalties",
+        "Returns get affected by inflation",
+        "Opportunity cost"
+      ],
+      "official_website_reference": "www.sbi.co.in/fixed-deposits",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "sbi_savings_1",
+      "bank_name": "State Bank of India (SBI)",
+      "scheme_category": "Savings Accounts",
+      "scheme_name": "SBI Savings Account - Basic",
+      "description": "Basic savings account for everyday banking with interest on balance",
+      "target_audience": "Students, regular individuals, salaried professionals",
+      "minimum_income_required": "None",
+      "minimum_age": 18,
+      "maximum_age": "No upper limit",
+      "loan_amount_min": "Not applicable",
+      "loan_amount_max": "Not applicable",
+      "interest_rate_range": "2.7% - 3.0% (on balance)",
+      "processing_fee": "None",
+      "repayment_tenure": "Ongoing account",
+      "collateral_required": "Not applicable",
+      "key_features": [
+        "Minimum balance requirement varies by city",
+        "Interest accrued on average daily balance",
+        "Free ATM withdrawals",
+        "Zero balance option available",
+        "Overdraft facility at nominal rates",
+        "Debit card with international usage",
+        "Online and mobile banking",
+        "Insurance coverage on deposits"
+      ],
+      "required_documents": [
+        "Identity proof (Aadhaar/PAN/Passport)",
+        "Address proof",
+        "Recent photograph",
+        "Account opening form"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen aged 18+ years",
+        "Any income group",
+        "Should have valid identity and address proof"
+      ],
+      "pros": [
+        "Easy to open with minimal documentation",
+        "No hidden charges",
+        "DEPOSIT insurance cover",
+        "Multiple channel access (branch/online/ATM)",
+        "Interest on balance",
+        "Free debit card"
+      ],
+      "cons": [
+        "Minimum balance requirement (varies by city)",
+        "Charges for ATM withdrawals beyond free limit",
+        "Penalty for insufficient balance",
+        "Low interest rates",
+        "Limited overdraft facility"
+      ],
+      "official_website_reference": "www.sbi.co.in/savings-accounts",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "hdfc_home_1",
+      "bank_name": "HDFC Bank",
+      "scheme_category": "Home Loans",
+      "scheme_name": "HDFC Home Loan - Flexipay",
+      "description": "Flexible home loans with options to adjust EMI based on income changes",
+      "target_audience": "First-time homebuyers, property investors, professionals",
+      "minimum_income_required": "₹3,00,000 per annum",
+      "minimum_age": 21,
+      "maximum_age": 65,
+      "loan_amount_min": "₹2,00,000",
+      "loan_amount_max": "₹5,00,00,000",
+      "interest_rate_range": "6.75% - 8.50%",
+      "processing_fee": "₹2,000-₹5,000",
+      "repayment_tenure": "5 to 30 years",
+      "collateral_required": "First mortgage of property being financed",
+      "key_features": [
+        "Flexipay option to adjust EMI",
+        "Balance transfer facility",
+        "Top-up loans available",
+        "Online application and verification",
+        "Part-payment without penalty",
+        "Insurance cover included",
+        "Loan against property facility",
+        "Quick disbursal within 5-7 days"
+      ],
+      "required_documents": [
+        "Identity and address proof",
+        "Last 6 months bank statements",
+        "IT returns (last 2 years)",
+        "Property documents and title search",
+        "Valuation report",
+        "Salary slips (if employed)"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen aged 21-65 years",
+        "Minimum monthly income ₹25,000",
+        "Employed for minimum 2 years (salaried)",
+        "Good credit score (700+)",
+        "Property value documentation"
+      ],
+      "pros": [
+        "Flexible EMI options",
+        "Fast disbursal",
+        "Competitive rates",
+        "Easy top-up facility",
+        "Good customer service",
+        "Online account management"
+      ],
+      "cons": [
+        "High processing fees",
+        "Collateral mortgage required",
+        "Strict documentation",
+        "Early repayment charges",
+        "Insurance is mandatory"
+      ],
+      "official_website_reference": "www.hdfc.com/home-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "hdfc_personal_1",
+      "bank_name": "HDFC Bank",
+      "scheme_category": "Personal Loans",
+      "scheme_name": "HDFC Personal Loan",
+      "description": "Quick personal loans for any purpose with flexible repayment options",
+      "target_audience": "Salaried individuals, professionals, entrepreneurs",
+      "minimum_income_required": "₹2,50,000 per annum",
+      "minimum_age": 21,
+      "maximum_age": 60,
+      "loan_amount_min": "₹25,000",
+      "loan_amount_max": "₹25,00,000",
+      "interest_rate_range": "9.0% - 14.0%",
+      "processing_fee": "₹500 - ₹2,000",
+      "repayment_tenure": "12 to 60 months",
+      "collateral_required": "None",
+      "key_features": [
+        "Quick approval within 24 hours",
+        "No collateral required",
+        "Flexible repayment tenure",
+        "Balance transfer facility",
+        "EMI protection cover",
+        "Online application",
+        "Part-payment allowed",
+        "Special rates for existing customers"
+      ],
+      "required_documents": [
+        "Application form",
+        "Identity and address proof",
+        "Last 6 months bank statements",
+        "IT returns or salary slips",
+        "Employment letter"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen aged 21-60 years",
+        "Minimum monthly income ₹20,000",
+        "Minimum 1+ years employment",
+        "CIBIL score 750+",
+        "Good repayment history"
+      ],
+      "pros": [
+        "Super fast approval",
+        "No collateral required",
+        "Competitive rates",
+        "Flexible months EMI",
+        "Good customer support",
+        "Instant online disbursal"
+      ],
+      "cons": [
+        "Higher interest than secured loans",
+        "Processing charges apply",
+        "Mandatory insurance",
+        "Requires good CIBIL",
+        "Limited to employed professionals"
+      ],
+      "official_website_reference": "www.hdfc.com/personal-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "icici_education_1",
+      "bank_name": "ICICI Bank",
+      "scheme_category": "Education Loans",
+      "scheme_name": "ICICI Bank Education Loan",
+      "description": "Education loans to support higher studies in India and abroad with minimal documentation",
+      "target_audience": "Students pursuing higher education",
+      "minimum_income_required": "Co-applicant income ₹2,50,000+",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "loan_amount_min": "₹1,00,000",
+      "loan_amount_max": "₹1,00,00,000",
+      "interest_rate_range": "7.75% - 9.5%",
+      "processing_fee": "₹500 - ₹1,500",
+      "repayment_tenure": "15 years (with moratorium post-graduation)",
+      "collateral_required": "No collateral up to ₹7.5 lakh; Collateral for higher amounts",
+      "key_features": [
+        "Minimal documentation",
+        "Quick approval (3-5 days)",
+        "Covers education abroad",
+        "Moratorium up to 1 year after course",
+        "Optional insurance cover",
+        "Balance transfer facility",
+        "Flexible repayment options"
+      ],
+      "required_documents": [
+        "Application form",
+        "Identity proof",
+        "Admission letter",
+        "Course details",
+        "Co-applicant income proof",
+        "Fee structure"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen aged 18-35 years",
+        "Admission to recognized institution",
+        "Co-applicant income for support",
+        "Good academic record"
+      ],
+      "pros": [
+        "Quick approval with minimal docs",
+        "No collateral for loans up to ₹7.5 lakh",
+        "Covers education costs fully",
+        "Competitive interest rates",
+        "Flexible moratorium"
+      ],
+      "cons": [
+        "Requires co-applicant/guarantor",
+        "Collateral needed for higher amounts",
+        "Limited to recognized institutions",
+        "Insurance charges"
+      ],
+      "official_website_reference": "www.icicibank.com/education-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "icici_msme_1",
+      "bank_name": "ICICI Bank",
+      "scheme_category": "MSME / Business Loans",
+      "scheme_name": "ICICI iMart Connect - MSME Loan",
+      "description": "Dedicated loan program for MSMEs with simple documentation and quick processing",
+      "target_audience": "Micro, Small & Medium Enterprises",
+      "minimum_income_required": "No minimum",
+      "minimum_age": 21,
+      "maximum_age": 70,
+      "loan_amount_min": "₹50,000",
+      "loan_amount_max": "₹25,00,000",
+      "interest_rate_range": "8.5% - 13.0%",
+      "processing_fee": "₹1,000 - ₹5,000",
+      "repayment_tenure": "12 to 72 months",
+      "collateral_required": "Collateral as per bank norms; Unsecured options available up to ₹25 lakhs",
+      "key_features": [
+        "Simple online application",
+        "Quick approval (5-7 days)",
+        "Flexible payment terms",
+        "Minimal documentation",
+        "Balance transfer facility",
+        "EMI deferment option",
+        "Working capital support"
+      ],
+      "required_documents": [
+        "Business registration documents",
+        "GST certificate",
+        "Last 3 months bank statements",
+        "Business plan",
+        "IT returns (if applicable)"
+      ],
+      "eligibility_criteria": [
+        "Registered MSME",
+        "Minimum 6 months business operation",
+        "Annual turnover ₹30+ lakhs",
+        "Business in operation",
+        "No defaults in past"
+      ],
+      "pros": [
+        "Quick approval and disbursal",
+        "Minimal documentation",
+        "Flexible repayment",
+        "Competitive rates for good credit",
+        "Online application process",
+        "Working capital flexibility"
+      ],
+      "cons": [
+        "Collateral requirement for high amounts",
+        "Requires 6+ months business history",
+        "Processing fees",
+        "Regular financial updates needed"
+      ],
+      "official_website_reference": "www.icicibank.com/msme-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "pnb_personal_1",
+      "bank_name": "Punjab National Bank (PNB)",
+      "scheme_category": "Personal Loans",
+      "scheme_name": "PNB Personal Loan",
+      "description": "Unsecured personal loans for salaried individuals and self-employed professionals",
+      "target_audience": "Salaried employees, self-employed professionals",
+      "minimum_income_required": "₹2,00,000 per annum",
+      "minimum_age": 21,
+      "maximum_age": 60,
+      "loan_amount_min": "₹25,000",
+      "loan_amount_max": "₹10,00,000",
+      "interest_rate_range": "9.0% - 12.5%",
+      "processing_fee": "₹500 - ₹2,000",
+      "repayment_tenure": "12 to 60 months",
+      "collateral_required": "None",
+      "key_features": [
+        "Quick approval process",
+        "No collateral or security",
+        "Flexible repayment terms",
+        "Optional insurance cover",
+        "Balance transfer available",
+        "Part-payment without penalty",
+        "Online application facility"
+      ],
+      "required_documents": [
+        "Application form",
+        "Identity proof",
+        "Address proof",
+        "Last 6 months salary slips",
+        "Bank statements",
+        "IT returns"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen aged 21-60 years",
+        "Minimum monthly income ₹16,667",
+        "Minimum 2 years service",
+        "CIBIL score 700+",
+        "Stable employment"
+      ],
+      "pros": [
+        "Affordable interest rates",
+        "No collateral required",
+        "Quick processing",
+        "Flexible tenure",
+        "Good customer service",
+        "Transparent charges"
+      ],
+      "cons": [
+        "Requires minimum CIBIL score",
+        "Processing fees applicable",
+        "Insurance charges",
+        "Limited loan amount",
+        "Strict documentation"
+      ],
+      "official_website_reference": "www.pnbindia.in/personal-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "pnb_agriculture_1",
+      "bank_name": "Punjab National Bank (PNB)",
+      "scheme_category": "Agriculture Loans",
+      "scheme_name": "PNB Crop Loan",
+      "description": "Agricultural loans for crop production and farm inputs",
+      "target_audience": "Farmers, landholders",
+      "minimum_income_required": "Based on landholding",
+      "minimum_age": 18,
+      "maximum_age": 75,
+      "loan_amount_min": "₹5,000",
+      "loan_amount_max": "₹20,00,000",
+      "interest_rate_range": "4.0% - 6.5% (with subsidy)",
+      "processing_fee": "₹0 (free)",
+      "repayment_tenure": "Aligned with crop harvest",
+      "collateral_required": "No collateral for loans up to ₹1 lakh",
+      "key_features": [
+        "Zero processing fees",
+        "Government interest subsidy",
+        "Flexible repayment linked to crop cycle",
+        "Insurance cover available",
+        "Quick disbursement",
+        "No collateral for smaller amounts",
+        "PMKVY subsidy eligible"
+      ],
+      "required_documents": [
+        "Land ownership/tenancy documents",
+        "Identity proof",
+        "Loan application form",
+        "Collateral documents (if required)"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen farmer",
+        "Owner or tenant farmer",
+        "Land documentation",
+        "Age 18-75 years",
+        "No default history"
+      ],
+      "pros": [
+        "Very low interest rates",
+        "Zero processing charges",
+        "Government subsidy available",
+        "No collateral for small loans",
+        "Aligned with farming schedule",
+        "Debt waiver eligibility"
+      ],
+      "cons": [
+        "Complex documentation",
+        "Limited to agricultural use",
+        "Subsidy restrictions may apply",
+        "Requires land ownership/proof",
+        "Regular inspections"
+      ],
+      "official_website_reference": "www.pnbindia.in/agricultural-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "bob_home_1",
+      "bank_name": "Bank of Baroda",
+      "scheme_category": "Home Loans",
+      "scheme_name": "BoB Home Loan - Baroda Home",
+      "description": "Home loans for property purchase, construction and renovation",
+      "target_audience": "Homebuyers, property investors",
+      "minimum_income_required": "₹2,50,000 per annum",
+      "minimum_age": 21,
+      "maximum_age": 65,
+      "loan_amount_min": "₹1,00,000",
+      "loan_amount_max": "₹2,50,00,000",
+      "interest_rate_range": "6.50% - 8.0%",
+      "processing_fee": "₹1,500 - ₹4,000",
+      "repayment_tenure": "5 to 30 years",
+      "collateral_required": "First mortgage of property",
+      "key_features": [
+        "Competitive interest rates",
+        "Quick approval and disbursal",
+        "Flexible repayment options",
+        "Top-up facility available",
+        "Balance transfer option",
+        "Part prepayment without penalty",
+        "Home insurance included",
+        "Easy online application"
+      ],
+      "required_documents": [
+        "Property documents",
+        "Identity and address proof",
+        "Income proof",
+        "Bank statements",
+        "IT returns"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen aged 21-65 years",
+        "Minimum monthly income ₹20,833",
+        "Good credit history",
+        "Age + tenure <= 75 years",
+        "Stable employment"
+      ],
+      "pros": [
+        "Competitive rates",
+        "Quick processing",
+        "Flexible repayment",
+        "Good customer service",
+        "Easy top-up",
+        "Home insurance included"
+      ],
+      "cons": [
+        "Processing fees",
+        "Mandatory insurance",
+        "Collateral required",
+        "Strict documentation",
+        "Early repayment charges"
+      ],
+      "official_website_reference": "www.bankofbaroda.in/home-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "axis_personal_1",
+      "bank_name": "Axis Bank",
+      "scheme_category": "Personal Loans",
+      "scheme_name": "Axis Bank Instapay",
+      "description": "Instant personal loans with quick approval and disbursal",
+      "target_audience": "Salaried professionals, self-employed",
+      "minimum_income_required": "₹2,50,000 per annum",
+      "minimum_age": 21,
+      "maximum_age": 60,
+      "loan_amount_min": "₹50,000",
+      "loan_amount_max": "₹15,00,000",
+      "interest_rate_range": "9.0% - 13.5%",
+      "processing_fee": "₹0 - ₹2,500",
+      "repayment_tenure": "12 to 60 months",
+      "collateral_required": "None",
+      "key_features": [
+        "Instant approval (within minutes)",
+        "Digital-first approach",
+        "No collateral required",
+        "Cashback offers",
+        "Balance transfer facility",
+        "Flexible payment options",
+        "Insurance cover",
+        "Online application and disbursal"
+      ],
+      "required_documents": [
+        "PAN and Aadhaar",
+        "Last 3 months salary slips",
+        "Bank statements (6 months)",
+        "Basic application form"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen aged 21-60 years",
+        "Minimum monthly income ₹20,833",
+        "Permanent employment (1+ years)",
+        "Good credit score",
+        "Active bank account"
+      ],
+      "pros": [
+        "Instant approval and disbursal",
+        "Digital-friendly process",
+        "Competitive rates",
+        "Minimal documentation",
+        "Cashback offers",
+        "Flexible tenure"
+      ],
+      "cons": [
+        "Higher rates for poor credit",
+        "Mandatory insurance",
+        "Processing fees for some",
+        "Limited to employed",
+        "Online-centric (limited branch support)"
+      ],
+      "official_website_reference": "www.axisbank.com/personal-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "canara_education_1",
+      "bank_name": "Canara Bank",
+      "scheme_category": "Education Loans",
+      "scheme_name": "Canara Education Loan",
+      "description": "Education loans for students pursuing higher education",
+      "target_audience": "Students, parents",
+      "minimum_income_required": "Co-applicant ₹2,00,000+",
+      "minimum_age": 18,
+      "maximum_age": 35,
+      "loan_amount_min": "₹50,000",
+      "loan_amount_max": "₹50,00,000",
+      "interest_rate_range": "7.0% - 9.0%",
+      "processing_fee": "₹500 - ₹1,000",
+      "repayment_tenure": "5-15 years (with moratorium)",
+      "collateral_required": "No collateral up to ₹7.5 lakh",
+      "key_features": [
+        "Easy approval process",
+        "Covers domestic and international education",
+        "Moratorium till course completion + 6 months",
+        "Part-time job income considered",
+        "Insurance cover included",
+        "Top-up facility available"
+      ],
+      "required_documents": [
+        "Application form",
+        "Admission letter",
+        "Course fee structure",
+        "Identity and address proof",
+        "Income documents of co-applicant"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen aged 18-35 years",
+        "Admission to recognized institution",
+        "Good academic health",
+        "Co-applicant support required"
+      ],
+      "pros": [
+        "Covers multiple educational costs",
+        "No collateral for ≤₹7.5 lakh",
+        "Competitive rates",
+        "Flexible moratorium",
+        "Insurance included"
+      ],
+      "cons": [
+        "Requires guarantor/co-applicant",
+        "Collateral for higher amounts",
+        "Limited to recognized institutions",
+        "Processing time 7-10 days"
+      ],
+      "official_website_reference": "www.canarabank.com/education-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "union_business_1",
+      "bank_name": "Union Bank of India",
+      "scheme_category": "MSME / Business Loans",
+      "scheme_name": "UBI Business Loan",
+      "description": "Business loans for small and medium enterprises with flexible terms",
+      "target_audience": "MSMEs, entrepreneurs, business owners",
+      "minimum_income_required": "Based on business",
+      "minimum_age": 21,
+      "maximum_age": 70,
+      "loan_amount_min": "₹1,00,000",
+      "loan_amount_max": "₹5,00,00,000",
+      "interest_rate_range": "7.5% - 11.5%",
+      "processing_fee": "₹1,000 - ₹3,000",
+      "repayment_tenure": "12 to 84 months",
+      "collateral_required": "Collateral as per norms; Unsecured up to ₹50 lakhs for eligible MSMEs",
+      "key_features": [
+        "Quick approval (3-5 days)",
+        "Unsecured options available",
+        "Flexible repayment terms",
+        "EMI holiday options",
+        "Balance transfer available",
+        "Top-up facility",
+        "Government subsidy eligibility",
+        "Minimal documentation"
+      ],
+      "required_documents": [
+        "Business registration",
+        "GST certificate",
+        "2 years audited financials",
+        "Bank statements",
+        "ITR copies",
+        "Business plan"
+      ],
+      "eligibility_criteria": [
+        "Registered business",
+        "Minimum 2 years operation",
+        "Annual turnover ₹20+ lakhs",
+        "Good repayment history",
+        "Valid business license"
+      ],
+      "pros": [
+        "Quick approval process",
+        "Competitive interest rates",
+        "Unsecured options available",
+        "Flexible terms",
+        "Government subsidy eligible",
+        "Easy top-up facility"
+      ],
+      "cons": [
+        "Requires business history",
+        "Collateral for high amounts",
+        "Regular financial reporting",
+        "Processing fees",
+        "Audit requirements for companies"
+      ],
+      "official_website_reference": "www.unionbankofindia.co.in/business-loans",
+      "last_updated": "2026-02-25"
+    },
+    {
+      "id": "union_agriculture_1",
+      "bank_name": "Union Bank of India",
+      "scheme_category": "Agriculture Loans",
+      "scheme_name": "UBI Crop Loan",
+      "description": "Seasonal and term loans for agricultural activities",
+      "target_audience": "Farmers, agricultural enterprises",
+      "minimum_income_required": "Based on landholding",
+      "minimum_age": 18,
+      "maximum_age": 75,
+      "loan_amount_min": "₹10,000",
+      "loan_amount_max": "₹10,00,000",
+      "interest_rate_range": "3.5% - 6.0% (with subsidy)",
+      "processing_fee": "₹0 (free)",
+      "repayment_tenure": "Crop cycle based",
+      "collateral_required": "No collateral for loans up to ₹1 lakh",
+      "key_features": [
+        "Zero processing fees",
+        "Government interest subsidy",
+        "Flexible repayment linked to harvest",
+        "Crop insurance available",
+        "Fast disbursement",
+        "Debt relief schemes",
+        "PMKVY subsidy eligible"
+      ],
+      "required_documents": [
+        "Land ownership documents",
+        "Identity proof",
+        "Loan application",
+        "Collateral documents (if needed)"
+      ],
+      "eligibility_criteria": [
+        "Indian citizen",
+        "Farmer or agricultural enterprise",
+        "Land ownership/tenancy proof",
+        "Age 18-75 years",
+        "Clean repayment record"
+      ],
+      "pros": [
+        "Very low interest rates",
+        "No processing charges",
+        "Government subsidy",
+        "No collateral for small loans",
+        "Flexible repayment",
+        "Debt waiver eligibility"
+      ],
+      "cons": [
+        "Complex documentation",
+        "Agricultural use only",
+        "Subsidy restrictions",
+        "Requires land proof",
+        "Regular inspections mandatory"
+      ],
+      "official_website_reference": "www.unionbankofindia.co.in/agricultural-loans",
+      "last_updated": "2026-02-25"
+    }
+  ]
+}

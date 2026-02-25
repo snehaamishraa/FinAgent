@@ -7,7 +7,18 @@
     "build": "next build",
     "start": "next start",
     "server": "node server/index.js",
-    "dev:all": "concurrently \"next dev\" \"node server/index.js\""
+    "server:prod": "NODE_ENV=production node server/index.js",
+    "dev:all": "concurrently \"next dev\" \"node server/index.js\"",
+    "test": "node server/api-tests.js",
+    "test:single": "node -e \"console.log('Running single endpoint test...'); const http = require('http'); http.get('http://localhost:5000/api/health', (res) => { let data = ''; res.on('data', chunk => data += chunk); res.on('end', () => console.log('Health:', JSON.parse(data))); });\"",
+    "validate:json": "node -e \"const fs = require('fs'); try { JSON.parse(fs.readFileSync('./server/data/bank_schemes.json')); console.log('✓ JSON is valid'); } catch(e) { console.error('✗ JSON error:', e.message); process.exit(1); }\"",
+    "lint:schemes": "node -e \"const schemes = require('./server/data/bank_schemes.json'); console.log('Total schemes:', schemes.schemes.length); const banks = [...new Set(schemes.schemes.map(s => s.bank_name))]; console.log('Banks:', banks.join(', ')); const cats = [...new Set(schemes.schemes.map(s => s.scheme_category))]; console.log('Categories:', cats.join(', '));\"",
+    "backup": "cp server/data/bank_schemes.json server/data/bank_schemes.backup.$(date +%Y%m%d_%H%M%S).json && echo 'Backup created'",
+    "health": "curl -s http://localhost:5000/api/health | jq .",
+    "list:banks": "curl -s http://localhost:5000/api/banks | jq .",
+    "list:categories": "curl -s http://localhost:5000/api/categories | jq .",
+    "list:schemes": "curl -s http://localhost:5000/api/schemes | jq '.schemes | length'",
+    "filter:example": "curl -X POST http://localhost:5000/api/filter -H 'Content-Type: application/json' -d '{\"age\":28,\"income\":600000,\"purpose\":\"Home Loans\",\"limit\":3}' | jq ."
   },
   "dependencies": {
     "react": "^18.2.0",
