@@ -73,6 +73,11 @@ All schemes are stored in `server/data/bank_schemes.json`. Each entry includes:
 - Data is for informational/demo use.
 - No personal data is stored.
 
+## Contributors
+
+- **Sneha Mishra** - Developer
+- **Saloni** - Team Lead
+
 ## Disclaimer
 
 This application is for educational and demonstration purposes only. Always verify details with the official bank or government source.
