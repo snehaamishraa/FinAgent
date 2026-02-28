@@ -114,7 +114,7 @@ export default function SelectBank() {
   return (
     <>
       <Head>
-        <title>Browse Banks - Banking Scheme Guidance</title>
+        <title>Browse Banks - Finagent</title>
       </Head>
 
       <div className={styles.container}>

@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>FinAgent</title>
+        <title>Finagent - Banking Scheme Finder</title>
         <meta name="description" content="Discover banking schemes tailored to your needs" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -22,7 +22,7 @@ export default function Home() {
         <header className={styles.header}>
           <div className={styles.logo}>
             <span className={styles.logoIcon}>🏦</span>
-            <span className={styles.logoText}>Fin<span className={styles.highlight}>Agent</span></span>
+            <span className={styles.logoText}><span className={styles.highlight}>Finagent</span></span>
           </div>
         </header>
 
@@ -101,7 +101,7 @@ export default function Home() {
         </main>
 
         <footer className={styles.footer}>
-          <p>🏦 FinAgent • Secure • Private • Trusted</p>
+          <p>🏦 Banking Scheme Guidance • Secure • Private • Trusted</p>
         </footer>
       </div>
     </>

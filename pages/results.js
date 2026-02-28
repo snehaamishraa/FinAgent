@@ -137,7 +137,7 @@ export default function Results() {
   return (
     <>
       <Head>
-        <title>{browseMode === 'category' ? router.query.category + ' Schemes' : 'Your Matches'} - Banking Scheme Guidance</title>
+        <title>{browseMode === 'category' ? router.query.category + ' Schemes' : 'Your Matches'} - Finagent</title>
       </Head>
 
       <div className={styles.container}>
@@ -262,6 +262,17 @@ export default function Results() {
 
                         {scheme.description && (
                           <p className={styles.description}>{scheme.description}</p>
+                        )}
+
+                        {scheme.bestFitExplanation && scheme.bestFitExplanation.length > 0 && (
+                          <div className={styles.explanations}>
+                            <strong>💡 Why this fits you:</strong>
+                            <ul>
+                              {scheme.bestFitExplanation.map((point, idx) => (
+                                <li key={idx}>{point}</li>
+                              ))}
+                            </ul>
+                          </div>
                         )}
 
                         <button

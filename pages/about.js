@@ -8,7 +8,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>About & Ethics - Banking Scheme Guidance</title>
+        <title>About & Ethics - Finagent</title>
       </Head>
 
       <div className={styles.container}>

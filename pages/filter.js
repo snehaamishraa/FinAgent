@@ -97,7 +97,7 @@ export default function Filter() {
   return (
     <>
       <Head>
-        <title>Find Your Match - Banking Scheme Guidance</title>
+        <title>Find Your Match - Finagent</title>
       </Head>
 
       <div className={styles.container}>
