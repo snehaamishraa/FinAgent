@@ -138,48 +138,81 @@ export default function handler(req, res) {
 
     // Handle POST request - filter schemes
     if (req.method === 'POST') {
-      const { age, income, purpose, loanAmount, bank, limit = 10, category } = req.body;
+      // Accept both old parameter names (from results.js) and new ones
+      const incoming = req.body;
+      const age = incoming.age ? parseInt(incoming.age) : null;
+      const monthlyIncome = incoming.monthlyIncome ? parseInt(incoming.monthlyIncome) : (incoming.income ? parseInt(incoming.income) : null);
+      const gender = incoming.gender || null;
+      const category = incoming.category || null;
+      const savingsGoal = incoming.savingsGoal || incoming.purpose || null;
 
       // Validate input
       if (age && (age < 18 || age > 100)) {
         return res.status(400).json({ success: false, error: 'Age must be between 18 and 100' });
       }
 
-      const criteria = {
-        age: age || null,
-        income: income || null,
-        purpose: purpose || null,
-        loanAmount: loanAmount || 0,
-        bank: bank || null,
-        category: category || null
-      };
+      // Filter schemes using helper to handle all criteria (age, income, loan amount, purpose, bank)
+      const criteriaObject = { age, income: monthlyIncome, loanAmount: incoming.loanAmount || 0, purpose: savingsGoal, bank: incoming.bank || null };
 
-      // Filter schemes
-      let filteredSchemes = data.schemes;
+      let filteredSchemes = data.schemes.filter(scheme => matchesCriteria(scheme, criteriaObject));
 
-      // If only category is provided, filter by category
-      if (category && !age && !income && !purpose) {
-        filteredSchemes = data.schemes.filter(scheme => 
-          scheme.scheme_category === category
-        );
-      } else {
-        // Full criteria matching
-        filteredSchemes = data.schemes
-          .filter(scheme => matchesCriteria(scheme, criteria))
-          .map(scheme => ({
-            ...scheme,
-            matchScore: calculateMatchScore(scheme, criteria)
-          }))
-          .sort((a, b) => b.matchScore - a.matchScore)
-          .slice(0, limit);
-      }
+      // Generate bestFitExplanation and matchScore for each matched scheme
+      const explainedSchemes = filteredSchemes.map(scheme => {
+        const explanations = [];
+
+        // Age match explanation
+        if (age) {
+          const minA = scheme.minimum_age;
+          const maxA = scheme.maximum_age;
+          if ((minA === undefined || age >= minA) && (maxA === undefined || age <= maxA)) {
+            if (minA != null && maxA != null) {
+              explanations.push(`Your age (${age}) falls within the eligible range of ${minA}–${maxA} years.`);
+            } else if (minA != null) {
+              explanations.push(`You meet the minimum age requirement of ${minA} years.`);
+            } else if (maxA != null) {
+              explanations.push(`You are younger than the maximum allowed age of ${maxA} years.`);
+            }
+          }
+        }
+
+        // Income eligibility explanation
+        if (monthlyIncome) {
+          const minI = scheme.minimum_income_required;
+          if (minI) {
+            const minRequired = parseCurrency(minI.toString());
+            if (monthlyIncome >= minRequired) {
+              explanations.push(`Your income (₹${monthlyIncome.toLocaleString()}) meets the minimum requirement of ₹${minRequired.toLocaleString()}.`);
+            }
+          } else {
+            explanations.push(`This scheme has flexible income requirements.`);
+          }
+        }
+
+        // Savings goal alignment explanation
+        if (savingsGoal) {
+          const goalLower = savingsGoal.toLowerCase();
+          const categoryLower = (scheme.scheme_category || '').toLowerCase();
+          if (categoryLower.includes(goalLower) || goalLower.includes(categoryLower)) {
+            explanations.push(`It aligns with your goal of ${savingsGoal}.`);
+          }
+        }
+
+        return {
+          ...scheme,
+          bestFitExplanation: explanations,
+          matchScore: calculateMatchScore(scheme, criteriaObject)
+        };
+      });
+
+      // sort by descending matchScore so stronger fits appear first
+      explainedSchemes.sort((a, b) => (b.matchScore || 0) - (a.matchScore || 0));
 
       return res.status(200).json({
         success: true,
-        criteria,
         totalSchemes: data.schemes.length,
-        matchedSchemes: filteredSchemes.length,
-        schemes: filteredSchemes,
+        matchedSchemes: explainedSchemes.length,
+        schemes: explainedSchemes,
+        userCriteria: { age, gender, category, monthlyIncome, savingsGoal },
         timestamp: new Date().toISOString()
       });
     }
