@@ -72,7 +72,7 @@ export default function Schemes() {
   return (
     <>
       <Head>
-        <title>{bankName} Schemes - Finagent</title>
+        <title>{bankName} Schemes - Banking Scheme Guidance</title>
       </Head>
 
       <div className={styles.container}>
