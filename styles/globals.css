@@ -1,85 +1,91 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Sora:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --neon-cyan: #3b82f6;
-  --neon-purple: #14b8a6;
-  --neon-pink: #f97316;
-  --neon-green: #22c55e;
-  --dark-bg: #0b1220;
-  --card-bg: #111827;
-  --card-hover: #0f1a2b;
-  --text-primary: #e5e7eb;
-  --text-secondary: #9ca3af;
-  --font-sans: "Sora", "Segoe UI", system-ui, sans-serif;
-  --font-display: "Fraunces", "Times New Roman", serif;
+  --primary: #00d4ff;
+  --primary-dark: #0099cc;
+  --secondary: #27ae60;
+  --accent: #f39c12;
+  --dark-bg: #0f0f1e;
+  --darker-bg: #0a0a15;
+  --card-bg: #1a1a2e;
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b8;
+  --border-color: #2a2a3e;
+  --success: #27ae60;
+  --error: #e74c3c;
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: var(--font-sans);
-  background: var(--dark-bg);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: var(--dark-bg);
   color: var(--text-primary);
   line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  min-height: 100vh;
-  background: radial-gradient(1200px circle at 20% 10%, rgba(20, 184, 166, 0.12), transparent 55%),
-              radial-gradient(900px circle at 80% 0%, rgba(59, 130, 246, 0.14), transparent 50%),
-              linear-gradient(180deg, #0b1220 0%, #0b1220 100%);
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-display);
-  letter-spacing: -0.02em;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  letter-spacing: -1px;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
 button {
   font-family: inherit;
   cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.3s ease;
 }
 
-/* Neon glow effect utility */
-.neon-glow {
-  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.25);
+input, textarea, select {
+  font-family: inherit;
 }
 
-.neon-glow-purple {
-  box-shadow: 0 6px 18px rgba(20, 184, 166, 0.22);
-}
-
-.neon-glow-pink {
-  box-shadow: 0 6px 18px rgba(249, 115, 22, 0.25);
-}
-
-/* Scrollbar styling */
+/* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f172a;
+  background: var(--darker-bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(59, 130, 246, 0.6);
+  background: rgba(0, 212, 255, 0.3);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(20, 184, 166, 0.7);
+  background: rgba(0, 212, 255, 0.5);
+}
+
+/* Selection Styling */
+::selection {
+  background: rgba(0, 212, 255, 0.3);
+  color: var(--text-primary);
+}
+
+/* Code Block Styling */
+code {
+  font-family: 'Courier New', monospace;
+  background: rgba(0, 212, 255, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: var(--primary);
 }
