@@ -264,6 +264,17 @@ export default function Results() {
                           <p className={styles.description}>{scheme.description}</p>
                         )}
 
+                        {scheme.bestFitExplanation && scheme.bestFitExplanation.length > 0 && (
+                          <div className={styles.explanations}>
+                            <strong>💡 Why this fits you:</strong>
+                            <ul>
+                              {scheme.bestFitExplanation.map((point, idx) => (
+                                <li key={idx}>{point}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+
                         <button
                           className={styles.learnMoreButton}
                           onClick={() => {

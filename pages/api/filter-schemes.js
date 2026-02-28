@@ -174,12 +174,66 @@ export default function handler(req, res) {
           .slice(0, limit);
       }
 
+      // Generate bestFitExplanation for each matched scheme
+      const explainedSchemes = filteredSchemes.map(scheme => {
+        const explanations = [];
+
+        // Age match explanation
+        if (criteria.age) {
+          const minA = scheme.minimum_age;
+          const maxA = scheme.maximum_age;
+          if ((minA === undefined || criteria.age >= minA) && (maxA === undefined || criteria.age <= maxA)) {
+            if (minA != null && maxA != null) {
+              explanations.push(`Your age (${criteria.age}) falls within the eligible range of ${minA}–${maxA} years.`);
+            } else if (minA != null) {
+              explanations.push(`You meet the minimum age requirement of ${minA} years.`);
+            } else if (maxA != null) {
+              explanations.push(`You are younger than the maximum allowed age of ${maxA} years.`);
+            } else {
+              explanations.push(`This scheme is open to all ages.`);
+            }
+          }
+        }
+
+        // Income eligibility explanation
+        if (criteria.income) {
+          const minI = scheme.minimum_income_required;
+          const minIncome = minI ? parseCurrency(minI.toString()) : undefined;
+          if ((minIncome === undefined || criteria.income >= minIncome)) {
+            if (minIncome != null) {
+              explanations.push(
+                `Your income (₹${criteria.income.toLocaleString()}) meets the minimum requirement of ₹${minIncome.toLocaleString()}.`
+              );
+            } else {
+              explanations.push(`This scheme has no minimum income restrictions.`);
+            }
+          }
+        }
+
+        // Category/Purpose match explanation
+        if (criteria.purpose) {
+          const purposeKey = normalizeLabel(criteria.purpose);
+          const categoryKey = normalizeLabel(scheme.scheme_category);
+          if (purposeKey === categoryKey) {
+            explanations.push(`Your goal (${criteria.purpose}) aligns perfectly with this scheme's category.`);
+          } else if (isTagCategory(criteria.purpose)) {
+            const schemeTags = Array.isArray(scheme.scheme_tags) ? scheme.scheme_tags : [];
+            const normalizedTags = schemeTags.map(tag => normalizeLabel(tag));
+            if (normalizedTags.includes(purposeKey)) {
+              explanations.push(`This scheme includes special benefits for ${criteria.purpose}.`);
+            }
+          }
+        }
+
+        return { ...scheme, bestFitExplanation: explanations };
+      });
+
       return res.status(200).json({
         success: true,
         criteria,
         totalSchemes: data.schemes.length,
-        matchedSchemes: filteredSchemes.length,
-        schemes: filteredSchemes,
+        matchedSchemes: explainedSchemes.length,
+        schemes: explainedSchemes,
         timestamp: new Date().toISOString()
       });
     }
