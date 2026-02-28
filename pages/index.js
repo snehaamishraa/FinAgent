@@ -102,6 +102,10 @@ export default function Home() {
 
           {/* Stats Section */}
           <section className={styles.statsSection}>
+            <div className={styles.statsHeader}>
+              <h2>Your Complete Finance Solutions Database</h2>
+              <p>Access verified schemes from India's leading banks - compare, analyze, and choose the perfect match for your financial goals</p>
+            </div>
             <div className={styles.statsContainer}>
               {stats.map((stat, idx) => (
                 <div key={idx} className={styles.statCard}>
