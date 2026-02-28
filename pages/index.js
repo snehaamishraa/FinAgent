@@ -98,7 +98,7 @@ export default function Home() {
                 Discover and compare banking schemes tailored to your needs. Smart matching powered by transparent rules.
               </p>
               <div className={styles.heroCTA}>
-                <Link href="/quick-filter">
+                <Link href="/get-started">
                   <button className={styles.primaryBtn}>
                     Get Started
                     <ArrowRight size={20} />
@@ -196,7 +196,7 @@ export default function Home() {
           <section className={styles.ctaSection}>
             <h2>Ready to Find Your Perfect Scheme?</h2>
             <p>Join thousands of Indians discovering their ideal financial products</p>
-            <Link href="/quick-filter">
+            <Link href="/get-started">
               <button className={styles.ctaBigBtn}>
                 Start Now
                 <ArrowRight size={24} />

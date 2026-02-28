@@ -646,6 +646,9 @@
   font-weight: 700;
   margin: 0;
   line-height: 1.4;
+  color: var(--text-primary);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  word-break: break-word;
 }
 
 .schemeCard svg {
