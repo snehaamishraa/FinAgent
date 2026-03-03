@@ -113,6 +113,7 @@ const categoryQuestions = {
 export default function CategoryDetails() {
   const router = useRouter();
   const category = router.query.category ? decodeURIComponent(router.query.category) : '';
+  const depositType = router.query.depositType ? decodeURIComponent(router.query.depositType) : '';
 
   const config = useMemo(() => {
     return categoryQuestions[category] || {
@@ -142,6 +143,7 @@ export default function CategoryDetails() {
 
     const query = new URLSearchParams({
       category,
+      depositType: depositType || '',
       age: formData.age || '',
       income: formData.income || '',
       loanAmount: formData.loanAmount || '',
@@ -166,6 +168,7 @@ export default function CategoryDetails() {
 
           <div>
             <h1>{config.title}</h1>
+            {depositType && <p className={styles.subtitle}>Type: {depositType}</p>}
             <p className={styles.subtitle}>{config.hint}</p>
             
             {/* Scheme explanation */}

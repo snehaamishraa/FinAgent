@@ -5,7 +5,7 @@ import styles from '../styles/Results.module.css';
 
 export default function Results() {
   const router = useRouter();
-  const { bank, age, gender, category, monthlyIncome, occupation, savingsGoal, income, loanAmount } = router.query;
+  const { bank, age, gender, category, monthlyIncome, occupation, savingsGoal, income, loanAmount, depositType } = router.query;
   
   const [results, setResults] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -65,6 +65,7 @@ export default function Results() {
           age: parseInt(age),
           gender,
           category,
+          depositType: depositType || undefined,
           monthlyIncome: parseInt(monthlyIncome),
           occupation,
           savingsGoal
@@ -88,6 +89,7 @@ export default function Results() {
       const resolvedIncome = monthlyIncome || income;
       const requestBody = {
         category: router.query.category,
+        depositType: depositType || undefined,
         age: age ? parseInt(age) : undefined,
         monthlyIncome: resolvedIncome ? parseInt(resolvedIncome) : undefined,
         loanAmount: loanAmount ? parseInt(loanAmount) : undefined,
@@ -149,7 +151,12 @@ export default function Results() {
   return (
     <>
       <Head>
-        <title>{browseMode === 'category' ? router.query.category + ' Schemes' : 'Your Matches'} - Finagent</title>
+        <title>
+        {browseMode === 'category'
+          ? router.query.category + (depositType ? ` - ${depositType}` : '') + ' Schemes'
+          : 'Your Matches'}{' '}
+        - Finagent
+      </title>
       </Head>
 
       <div className={styles.container}>
@@ -191,6 +198,9 @@ export default function Results() {
                       : 'Your Matched Schemes'
                     }
                   </h1>
+                  {browseMode === 'category' && depositType && (
+                    <p className={styles.subtitle}>Type: {depositType}</p>
+                  )}
                   <p className={styles.subtitle}>
                     Found <strong>{results.schemes.length}</strong> schemes
                     {browseMode === 'filter' && results.totalSchemes && ` out of ${results.totalSchemes} available`}

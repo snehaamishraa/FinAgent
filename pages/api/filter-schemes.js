@@ -156,6 +156,15 @@ export default function handler(req, res) {
 
       let filteredSchemes = data.schemes.filter(scheme => matchesCriteria(scheme, criteriaObject));
 
+      // apply depositType filter if provided (for fixed deposits)
+      if (incoming.depositType) {
+        const dt = incoming.depositType.toString().toLowerCase();
+        filteredSchemes = filteredSchemes.filter(scheme => {
+          const name = (scheme.scheme_name || scheme.name || '').toLowerCase();
+          return name.includes(dt);
+        });
+      }
+
       // Generate bestFitExplanation and matchScore for each matched scheme
       const explainedSchemes = filteredSchemes.map(scheme => {
         const explanations = [];

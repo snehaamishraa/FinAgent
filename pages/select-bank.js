@@ -121,7 +121,10 @@ export default function SelectBank() {
 
   // split categories into loan-related and others so we can show a single "Loans" box
   const loanCategories = categories.filter(c => c.toLowerCase().includes('loan'));
-  const otherCategories = categories.filter(c => !c.toLowerCase().includes('loan'));
+  const fixedDepositPresent = categories.includes('Fixed Deposits');
+  const otherCategories = categories.filter(
+    (c) => !c.toLowerCase().includes('loan') && c !== 'Fixed Deposits'
+  );
 
   return (
     <>
@@ -286,6 +289,19 @@ export default function SelectBank() {
                       <div className={styles.categoryIcon}>{getCategoryIcon('Loans')}</div>
                       <h3>Loans</h3>
                       <p>Browse all loan schemes</p>
+                    </div>
+                  )}
+
+                  {/* special fixed deposit card linking to its own type selector */}
+                  {fixedDepositPresent && (
+                    <div
+                      key="Fixed Deposits"
+                      className={styles.categoryCard}
+                      onClick={() => router.push('/fixed-deposit-categories')}
+                    >
+                      <div className={styles.categoryIcon}>{getCategoryIcon('Fixed Deposits')}</div>
+                      <h3>Fixed Deposits</h3>
+                      <p>Browse all fixed deposit types</p>
                     </div>
                   )}
 
